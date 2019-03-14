@@ -1,0 +1,16 @@
+<IfModule mod_rewrite.c>
+  Options +FollowSymlinks -Multiviews
+  RewriteEngine On
+
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME} !-f
+
+  RewriteCond %{QUERY_STRING} ^(.*)$
+  RewriteRule ^index.html$ index.php
+  RewriteRule ^admin$ /App/Admin/index.php
+  ReWriteRule ^new.html$ /App/Home/new.php
+  ReWriteRule ^content_([0-9]+).html$ /App/Home/content.php?id=$1
+
+
+  ErrorDocument 404 /404.html
+</IfModule>
