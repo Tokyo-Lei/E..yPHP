@@ -5,7 +5,7 @@ define('IS_MyPHP', TRUE);
 //定义根目录
 define('ROOT_PATH',dirname(__FILE__));
 //加载配置
-require_once (ROOT_PATH.'/Admin_config.php');
+require_once(ROOT_PATH . '/Admin_config.php');
 
 
 //如果用户空提交，返回重登录

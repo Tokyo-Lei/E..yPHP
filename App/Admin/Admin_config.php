@@ -8,8 +8,18 @@ define('LIB_PATH',$_SERVER['DOCUMENT_ROOT'].'/Library');
 //定义Admin链接
 $admin_url='http://'.$_SERVER['HTTP_HOST'].substr($_SERVER['PHP_SELF'],0,strrpos($_SERVER['PHP_SELF'],'/')+1);
 
+
+//定义在App/Admin/链接
+$App_URL = 'http://'.$_SERVER['SERVER_NAME'].'/App/Admin/';
+
+//定义在App/Admin/Include链接
+$App_URL_Include = 'http://'.$_SERVER['SERVER_NAME'].'/App/Admin/Include/';
+
 //定于静态链接
 $PUBLIC_URL ='http://'.$_SERVER['SERVER_NAME'].'/Public/';
+
+
+
 
 
 
@@ -28,12 +38,18 @@ require_once (LIB_PATH.'/Post_Get.php');
 //加载分类
 require_once (LIB_PATH.'/ClassTree.class.php');
 
+//加载文件类
+require_once (LIB_PATH.'/File.class.php');
+
 //加载phpError类
 require_once $_SERVER['DOCUMENT_ROOT'].'./Library/Php_error.php' ;
 \php_error\reportErrors();
 
 
 $_URL_= pathinfo($_SERVER['PHP_SELF']);
+$_URL_INCLUDE = pathinfo($_URL_['dirname']);
+
+
 
 
 

@@ -4,7 +4,7 @@ define('ROOT_PATH',dirname(__FILE__));
 define('IS_MyPHP', TRUE);
 //加载配置
 require_once (ROOT_PATH.'/Admin_config.php');
-   include 'Admin_head.php';
+   include 'Include/Admin_head.php';
 ?>
 
   <body>
@@ -46,6 +46,6 @@ require_once (ROOT_PATH.'/Admin_config.php');
       </div>
      
     </div>
-<?php include 'Admin_footer.php'; ?>
+<?php include 'Include/Admin_footer.php'; ?>
 
 

@@ -1,3 +1,10 @@
+<?php
+
+
+
+?>
+
+
 <body>
 <div class="page">
     <!-- Main Navbar-->
@@ -21,7 +28,7 @@
                 </div>
                 <!-- Navbar Menu -->
                 <ul class="nav-menu list-unstyled d-flex flex-md-row align-items-md-center">
-                    <li class="nav-item"><a href="<?php echo $admin_url ?>Login/Login_out.php" class="nav-link logout"> <span class="d-none d-sm-inline">更新缓存</span><i class="fa fa-magic"></i></a></li>
+                    <li class="nav-item"><a href="<?php echo $admin_url ?>Processing.php?dele=del_cache.php" class="nav-link logout"> <span class="d-none d-sm-inline">更新缓存</span><i class="fa fa-magic"></i></a></li>
                     <li class="nav-item"><a href="<?php echo $admin_url ?>Login/Login_out.php" class="nav-link logout"> <span class="d-none d-sm-inline">安全退出</span><i class="fa fa-sign-out"></i></a></li>
                 </ul>
             </div>
@@ -44,22 +51,20 @@
 
 
 
-
-
             <?php if($_URL_['filename'] == 'index'){
-                echo '<li class="active"><a href="'. $admin_url .'index.php"> <i class="icon-home"></i>基本概况 </a></li>';
+                echo '<li class="active"><a href="/admin"> <i class="icon-home"></i>基本概况</a></li>';
             }else{
-                echo '<li><a href="'. $admin_url .'index.php"> <i class="icon-home"></i>基本概况 </a></li>';
+                echo '<li><a href="/admin"> <i class="icon-home"></i>基本概况 </a></li>';
             }
             ?>
 
-            <?php if($_URL_['filename'] == 'category_add' or $_URL_['filename'] == 'category'){
+            <?php if($_URL_['filename'] == 'category_add' or $_URL_['filename'] == 'category' or $_URL_['filename'] == 'category_edit'){
                 echo '
 
                 <li class="active"><a href="#exampledropdownDropdown" aria-expanded="true" data-toggle="collapse"> <i class="icon-interface-windows"></i>分类管理 </a>
                     <ul id="exampledropdownDropdown" class="collapse list-unstyled ">
-                        <li><a href="'. $admin_url .'category_add.php">新建分类</a></li>
-                        <li><a href="'. $admin_url .'category.php" target="_parent">管理分类</a></li>
+                        <li><a href="'. $App_URL_Include .'category_add.php">新建分类</a></li>
+                        <li><a href="'. $App_URL_Include .'category.php" target="_parent">管理分类</a></li>
                     </ul>
                 </li>
 
@@ -69,8 +74,8 @@
                 
                  <li><a href="#exampledropdownDropdown" aria-expanded="false" data-toggle="collapse"> <i class="icon-interface-windows"></i>分类管理 </a>
                     <ul id="exampledropdownDropdown" class="collapse list-unstyled ">
-                        <li><a href="'. $admin_url .'category_add.php">新建分类</a></li>
-                        <li><a href="'. $admin_url .'category.php" target="_parent">管理分类</a></li>
+                        <li><a href="'. $App_URL_Include .'category_add.php">新建分类</a></li>
+                        <li><a href="'. $App_URL_Include .'category.php" target="_parent">管理分类</a></li>
                     </ul>
                 </li>
                 
@@ -83,8 +88,8 @@
 
                 <li class="active"><a href="#contentdownDropdown" aria-expanded="true" data-toggle="collapse"> <i class="icon-interface-windows"></i>内容管理 </a>
                     <ul id="contentdownDropdown" class="collapse list-unstyled ">
-                        <li><a href="'. $admin_url .'content_add.php">撰写内容</a></li>
-                        <li><a href="'. $admin_url .'content.php" target="_parent">管理内容</a></li>
+                        <li><a href="'. $App_URL_Include .'content_add.php">撰写内容</a></li>
+                        <li><a href="'. $App_URL_Include .'content.php" target="_parent">管理内容</a></li>
                     </ul>
                 </li>
 
@@ -94,8 +99,8 @@
                 
                  <li><a href="#contentdownDropdown" aria-expanded="false" data-toggle="collapse"> <i class="icon-interface-windows"></i>内容管理 </a>
                     <ul id="contentdownDropdown" class="collapse list-unstyled ">
-                        <li><a href="'. $admin_url .'content_add.php">专业内容</a></li>
-                        <li><a href="'. $admin_url .'content.php" target="_parent">管理内容</a></li>
+                        <li><a href="'. $App_URL_Include .'content_add.php">专业内容</a></li>
+                        <li><a href="'. $App_URL_Include .'content.php" target="_parent">管理内容</a></li>
                     </ul>
                 </li>
                 
@@ -104,9 +109,9 @@
             ?>
 
             <?php if($_URL_['filename'] == 'configure'){
-                echo '<li class="active"><a href="'. $admin_url .'configure.php"> <i class="icon-home"></i>站点配置 </a></li>';
+                echo '<li class="active"><a href="'. $App_URL_Include .'configure.php"> <i class="icon-home"></i>站点配置 </a></li>';
             }else{
-                echo '<li><a href="'. $admin_url .'configure.php"> <i class="icon-home"></i>站点配置 </a></li>';
+                echo '<li><a href="'. $App_URL_Include .'configure.php"> <i class="icon-home"></i>站点配置 </a></li>';
             }
             ?>
 

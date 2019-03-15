@@ -18,20 +18,16 @@ if(!isset($_SESSION['username'])){
 } 
 
 
+// 加载页头
+include 'Include/Admin_head.php';
+include 'Include/nav.php';
+include 'Include/home.php';
+
+
+
+
+
 ?>
-<!-- 加载页头 -->
-<?php include 'Admin_head.php'; ?>
-
-    
-
-
-
-
-
-  <?php
-     include 'Include/nav.php';
-     include 'Include/home.php';
-  ?>
 
 
 
@@ -55,7 +51,7 @@ if(!isset($_SESSION['username'])){
         </div>
       </div>
     </div>
-<?php include 'Admin_footer.php'; ?>
+<?php include 'Include/Admin_footer.php'; ?>
 
 
 
