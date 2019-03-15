@@ -1,29 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b5956984-05ac-4cd0-a55e-71361e08034b" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/App/Admin/Include/category.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/App/Admin/Include/category_add.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Library/File.class.php" />
-      <change beforePath="$PROJECT_DIR$/App/Admin/Admin_config.php" afterPath="$PROJECT_DIR$/App/Admin/Admin_config.php" />
-      <change beforePath="$PROJECT_DIR$/App/Admin/Admin_footer.php" afterPath="$PROJECT_DIR$/App/Admin/Include/Admin_footer.php" />
-      <change beforePath="$PROJECT_DIR$/App/Admin/Admin_head.php" afterPath="$PROJECT_DIR$/App/Admin/Include/Admin_head.php" />
-      <change beforePath="$PROJECT_DIR$/App/Admin/Include/cate_add.php" afterPath="$PROJECT_DIR$/App/Admin/Include/category_edit.php" />
-      <change beforePath="$PROJECT_DIR$/App/Admin/Include/cate_list.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/App/Admin/Include/nav.php" afterPath="$PROJECT_DIR$/App/Admin/Include/nav.php" />
-      <change beforePath="$PROJECT_DIR$/App/Admin/Login.php" afterPath="$PROJECT_DIR$/App/Admin/Login.php" />
-      <change beforePath="$PROJECT_DIR$/App/Admin/Processing.php" afterPath="$PROJECT_DIR$/App/Admin/Processing.php" />
-      <change beforePath="$PROJECT_DIR$/App/Admin/category.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/App/Admin/category_add.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/App/Admin/configure.php" afterPath="$PROJECT_DIR$/App/Admin/Include/configure.php" />
-      <change beforePath="$PROJECT_DIR$/App/Admin/content.php" afterPath="$PROJECT_DIR$/App/Admin/Include/content.php" />
-      <change beforePath="$PROJECT_DIR$/App/Admin/content_add.php" afterPath="$PROJECT_DIR$/App/Admin/Include/content_add.php" />
-      <change beforePath="$PROJECT_DIR$/App/Admin/index.php" afterPath="$PROJECT_DIR$/App/Admin/index.php" />
-      <change beforePath="$PROJECT_DIR$/Cache/8e/8e3c37110c6f82e83c1e1ce2bc5eea0d911042bc82e0ca57e7c814b6066912bf.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Cache/index.htm" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Templates/index.html" afterPath="$PROJECT_DIR$/Templates/index.html" />
-    </list>
+    <list default="true" id="b5956984-05ac-4cd0-a55e-71361e08034b" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -321,16 +299,15 @@
       <option name="presentableId" value="Default" />
       <updated>1552608255694</updated>
       <workItem from="1552608257525" duration="9377000" />
-      <workItem from="1552627594436" duration="8772000" />
+      <workItem from="1552627594436" duration="8815000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18149000" />
+    <option name="totallyTimeSpent" value="18192000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16255365" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
