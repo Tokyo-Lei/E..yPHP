@@ -19,7 +19,7 @@ $App_URL_Include = 'http://'.$_SERVER['SERVER_NAME'].'/App/Admin/Include/';
 $PUBLIC_URL ='http://'.$_SERVER['SERVER_NAME'].'/Public/';
 
 
-
+define('UPLOAD_PATH',$_SERVER['DOCUMENT_ROOT'].'/Public/');
 
 
 

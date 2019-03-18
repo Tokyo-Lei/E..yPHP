@@ -91,7 +91,7 @@ $user_db = $_DB->select("user", [
             }
             ?>
 
-            <?php if($_URL_['filename'] == 'content_add' or $_URL_['filename'] == 'content'){
+            <?php if($_URL_['filename'] == 'Content_add' or $_URL_['filename'] == 'Content'){
                 echo '
 
                 <li class="active"><a href="#contentdownDropdown" aria-expanded="true" data-toggle="collapse"> <i class="icon-interface-windows"></i>内容管理 </a>
@@ -107,7 +107,7 @@ $user_db = $_DB->select("user", [
                 
                  <li><a href="#contentdownDropdown" aria-expanded="false" data-toggle="collapse"> <i class="icon-interface-windows"></i>内容管理 </a>
                     <ul id="contentdownDropdown" class="collapse list-unstyled ">
-                        <li><a href="'. $App_URL_Include .'Content_add.php">专业内容</a></li>
+                        <li><a href="'. $App_URL_Include .'Content_add.php">撰写内容</a></li>
                         <li><a href="'. $App_URL_Include .'Content.php" target="_parent">管理内容</a></li>
                     </ul>
                 </li>
