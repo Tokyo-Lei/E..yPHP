@@ -1,6 +1,14 @@
 <?php
 
-
+//调出管理用户
+$user_db = $_DB->select("user", [
+    "id",
+    "nickname",
+    "thumbnail",
+    "level"
+],[
+    "level" => 2
+]);
 
 ?>
 
@@ -29,7 +37,7 @@
                 <!-- Navbar Menu -->
                 <ul class="nav-menu list-unstyled d-flex flex-md-row align-items-md-center">
                     <li class="nav-item"><a href="<?php echo $App_URL ?>Processing.php?dele=del_cache.php" class="nav-link logout"> <span class="d-none d-sm-inline">更新缓存</span><i class="fa fa-magic"></i></a></li>
-                    <li class="nav-item"><a href="<?php echo $admin_url ?>Login/Login_out.php" class="nav-link logout"> <span class="d-none d-sm-inline">安全退出</span><i class="fa fa-sign-out"></i></a></li>
+                    <li class="nav-item"><a href="<?php echo $App_URL ?>Login/Login_out.php" class="nav-link logout"> <span class="d-none d-sm-inline">安全退出</span><i class="fa fa-sign-out"></i></a></li>
                 </ul>
             </div>
         </div>
@@ -40,9 +48,9 @@
     <nav class="side-navbar">
         <!-- Sidebar Header-->
         <div class="sidebar-header d-flex align-items-center">
-            <div class="avatar"><img src="<?php echo $PUBLIC_URL ?>/Admin/img/avatar-1.jpg" alt="..." class="img-fluid rounded-circle"></div>
+            <div class="avatar"><img src="<?php echo $user_db[0]['thumbnail'] ?>" alt="..." class="img-fluid rounded-circle"></div>
             <div class="title">
-                <h1 class="h4">您好，杨雷！</h1>
+                <h1 class="h4">您好，<?php echo $user_db[0]['nickname'] ?></h1>
                 <p>欢迎您回来。</p>
             </div>
         </div>
@@ -58,7 +66,7 @@
             }
             ?>
 
-            <?php if($_URL_['filename'] == 'category_add' or $_URL_['filename'] == 'category' or $_URL_['filename'] == 'category_edit'){
+            <?php if($_URL_['filename'] == 'Category_add' or $_URL_['filename'] == 'Category' or $_URL_['filename'] == 'category_edit'){
                 echo '
 
                 <li class="active"><a href="#exampledropdownDropdown" aria-expanded="true" data-toggle="collapse"> <i class="icon-interface-windows"></i>分类管理 </a>
@@ -107,6 +115,38 @@
                 ';
             }
             ?>
+
+
+
+            <!--用户管理-->
+            <?php if($_URL_['filename'] == 'User' or $_URL_['filename'] == 'User_edit' ){
+                echo '
+
+                <li class="active"><a href="#userdownDropdown" aria-expanded="true" data-toggle="collapse"> <i class="icon-interface-windows"></i>用户管理 </a>
+                    <ul id="userdownDropdown" class="collapse list-unstyled ">
+                        <li><a href="'. $App_URL_Include .'User.php" target="_parent">用户数据</a></li>
+                    </ul>
+                </li>
+
+';
+            }else{
+                echo '
+                
+                 <li><a href="#userdownDropdown" aria-expanded="false" data-toggle="collapse"> <i class="icon-interface-windows"></i>用户管理 </a>
+                    <ul id="userdownDropdown" class="collapse list-unstyled ">
+                        <li><a href="'. $App_URL_Include .'User.php" target="_parent">用户数据</a></li>
+                    </ul>
+                </li>
+                
+                ';
+            }
+            ?>
+
+
+
+
+
+
 
             <?php if($_URL_['filename'] == 'configure'){
                 echo '<li class="active"><a href="'. $App_URL_Include .'Configure.php"> <i class="icon-home"></i>站点配置 </a></li>';

@@ -45,11 +45,14 @@
                   <div class="item d-flex align-items-center">
                     <div class="icon bg-green"><i class="icon-bill"></i></div>
                     <div class="title"><span>分类<br>类别统计</span>
+                        <?php
+                        $_count_cate = $_DB->count("category");
+                        ?>
                       <div class="progress">
-                        <div role="progressbar" style="width: 40%; height: 4px;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" class="progress-bar bg-green"></div>
+                        <div role="progressbar" style="width: <?php echo $_count_cate ?>%; height: 4px;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" class="progress-bar bg-green"></div>
                       </div>
                     </div>
-                    <div class="number"><strong>40</strong></div>
+                    <div class="number"><strong><?php echo $_count_cate ?></strong></div>
                   </div>
                 </div>
                 <!-- Item -->

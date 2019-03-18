@@ -41,6 +41,11 @@ require_once (LIB_PATH.'/ClassTree.class.php');
 //加载文件类
 require_once (LIB_PATH.'/File.class.php');
 
+
+//加载分页类
+require_once (LIB_PATH.'/Page.php');
+
+
 //加载phpError类
 require_once $_SERVER['DOCUMENT_ROOT'].'./Library/Php_error.php' ;
 \php_error\reportErrors();

@@ -112,6 +112,26 @@ require_once (ROOT_PATH.'/Admin_config.php');
 
 
 
+    //编辑用户
+    if(isset($_GET['user_update']) == 'user_update'){
+        $_DB->update("user", [
+            "username" =>Getpost::filterWords($_GET['username']),
+            "nickname" => Getpost::filterWords($_GET['nickname']),
+            "password" => md5($_GET['password']),
+            "email" => Getpost::filterWords($_GET['email']),
+            "thumbnail" => Getpost::filterWords($_GET['thumbnail']),
+            "level" => intval($_GET['level'])
+        ],[
+            "id" => intval($_GET['id']),
+        ]);
+        echo "<script>window.location.href='$App_URL_Include./User.php'</script>";
+        exit;
+    };
+
+
+
+
+
 
 
     //更新缓存
