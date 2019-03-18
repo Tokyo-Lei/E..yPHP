@@ -2,135 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b5956984-05ac-4cd0-a55e-71361e08034b" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/Public/Admin/simditor/images/fork.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/Admin/simditor/images/image.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/Admin/simditor/images/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/Admin/simditor/images/logo@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/Admin/simditor/images/title.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/Admin/simditor/images/title@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/Admin/simditor/scripts/dompurify.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/Admin/simditor/scripts/hotkeys.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/Admin/simditor/scripts/jquery.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/Admin/simditor/scripts/mobilecheck.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/Admin/simditor/scripts/module.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/Admin/simditor/scripts/page-demo.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/Admin/simditor/scripts/page-doc.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/Admin/simditor/scripts/page-download.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/Admin/simditor/scripts/page-form.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/Admin/simditor/scripts/simditor.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/Admin/simditor/scripts/uploader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/Admin/simditor/styles/app.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/Admin/simditor/styles/mobile.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/Admin/simditor/styles/simditor.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/bootstrap/css/bootstrap-grid.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/bootstrap/css/bootstrap-grid.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/bootstrap/css/bootstrap-reboot.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/bootstrap/css/bootstrap-reboot.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/bootstrap/css/bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/bootstrap/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/bootstrap/js/bootstrap.bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/bootstrap/js/bootstrap.bundle.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/bootstrap/js/bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/bootstrap/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/chart.js/Chart.bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/chart.js/Chart.bundle.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/chart.js/Chart.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/chart.js/Chart.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/font-awesome/HELP-US-OUT.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/font-awesome/css/font-awesome.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/font-awesome/css/font-awesome.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/font-awesome/fonts/FontAwesome.otf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/font-awesome/fonts/fontawesome-webfont.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/font-awesome/fonts/fontawesome-webfont.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/font-awesome/fonts/fontawesome-webfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/font-awesome/fonts/fontawesome-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/font-awesome/fonts/fontawesome-webfont.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/jquery-validation/additional-methods.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/jquery-validation/jquery.validate.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/jquery-validation/jquery.validate.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/jquery-validation/localization/messages_ar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/jquery-validation/localization/messages_az.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/jquery-validation/localization/messages_bg.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/jquery-validation/localization/messages_bn_BD.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/jquery-validation/localization/messages_ca.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/jquery-validation/localization/messages_cs.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/jquery-validation/localization/messages_da.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/jquery-validation/localization/messages_de.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/jquery-validation/localization/messages_el.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/jquery-validation/localization/messages_es.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/jquery-validation/localization/messages_es_AR.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/jquery-validation/localization/messages_es_PE.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/jquery-validation/localization/messages_et.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/jquery-validation/localization/messages_eu.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/jquery-validation/localization/messages_fa.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/jquery-validation/localization/messages_fi.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/jquery-validation/localization/messages_fr.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/jquery-validation/localization/messages_ge.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/jquery-validation/localization/messages_gl.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/jquery-validation/localization/messages_he.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/jquery-validation/localization/messages_hr.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/jquery-validation/localization/messages_hu.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/jquery-validation/localization/messages_hy_AM.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/jquery-validation/localization/messages_id.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/jquery-validation/localization/messages_is.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/jquery-validation/localization/messages_it.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/jquery-validation/localization/messages_ja.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/jquery-validation/localization/messages_ka.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/jquery-validation/localization/messages_kk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/jquery-validation/localization/messages_ko.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/jquery-validation/localization/messages_lt.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/jquery-validation/localization/messages_lv.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/jquery-validation/localization/messages_mk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/jquery-validation/localization/messages_my.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/jquery-validation/localization/messages_nl.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/jquery-validation/localization/messages_no.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/jquery-validation/localization/messages_pl.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/jquery-validation/localization/messages_pt_BR.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/jquery-validation/localization/messages_pt_PT.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/jquery-validation/localization/messages_ro.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/jquery-validation/localization/messages_ru.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/jquery-validation/localization/messages_sd.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/jquery-validation/localization/messages_si.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/jquery-validation/localization/messages_sk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/jquery-validation/localization/messages_sl.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/jquery-validation/localization/messages_sr.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/jquery-validation/localization/messages_sr_lat.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/jquery-validation/localization/messages_sv.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/jquery-validation/localization/messages_th.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/jquery-validation/localization/messages_tj.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/jquery-validation/localization/messages_tr.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/jquery-validation/localization/messages_uk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/jquery-validation/localization/messages_ur.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/jquery-validation/localization/messages_vi.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/jquery-validation/localization/messages_zh.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/jquery-validation/localization/messages_zh_TW.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/jquery-validation/localization/methods_de.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/jquery-validation/localization/methods_es_CL.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/jquery-validation/localization/methods_fi.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/jquery-validation/localization/methods_nl.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/jquery-validation/localization/methods_pt.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/jquery.cookie/MIT-LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/jquery.cookie/component.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/jquery.cookie/cookie.jquery.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/jquery.cookie/jquery.cookie.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/jquery/core.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/jquery/jquery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/jquery/jquery.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/jquery/jquery.slim.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/jquery/jquery.slim.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/popper.js/esm/popper-utils.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/popper.js/esm/popper-utils.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/popper.js/esm/popper.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/popper.js/esm/popper.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/popper.js/popper-utils.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/popper.js/popper-utils.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/popper.js/popper.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/popper.js/popper.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/popper.js/umd/popper-utils.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/popper.js/umd/popper-utils.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/popper.js/umd/popper.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/popper.js/umd/popper.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Public/typeit.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Admin/Include/Admin_footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Admin/Include/Admin_footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Admin/Include/Admin_head.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Admin/Include/Admin_head.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -162,62 +35,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/App/Admin/Include/Admin_head.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="15" column="72" selection-start-line="15" selection-start-column="64" selection-end-line="15" selection-end-column="72" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/Admin/Include/Admin_footer.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="70">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/Admin/Include/Category.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="25" column="10" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/Admin/Include/.ph2p">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="26" column="33" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/Admin/Include/Upload.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="21" column="35" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="35" />
+            <state relative-caret-position="442">
+              <caret line="17" column="9" lean-forward="true" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/App/Admin/Include/Content_add.php">
+        <entry file="file://$PROJECT_DIR$/App/Admin/Include/Admin_footer.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1431">
-              <caret line="154" column="6" selection-start-line="154" selection-start-column="6" selection-end-line="154" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/Admin/Admin_config.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+            <state relative-caret-position="442">
+              <caret line="17" column="7" lean-forward="true" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -279,18 +107,17 @@
         <option value="$PROJECT_DIR$/App/Admin/Processing.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/App/Admin/Include/nav.php" />
-        <option value="$PROJECT_DIR$/App/Admin/Include/Admin_head.php" />
         <option value="$PROJECT_DIR$/App/Admin/Upload.php" />
         <option value="$PROJECT_DIR$/App/Admin/Admin_config.php" />
-        <option value="$PROJECT_DIR$/App/Admin/Include/Admin_footer.php" />
         <option value="$PROJECT_DIR$/App/Admin/Include/Upload.php" />
         <option value="$PROJECT_DIR$/Public/Admin/simditor/scripts/simditor.js" />
         <option value="$PROJECT_DIR$/App/Admin/Include/Content_add.php" />
+        <option value="$PROJECT_DIR$/App/Admin/Include/Admin_head.php" />
+        <option value="$PROJECT_DIR$/App/Admin/Include/Admin_footer.php" />
       </list>
     </option>
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="86" />
     <option name="y" value="304" />
     <option name="width" value="1936" />
@@ -302,7 +129,40 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="E..yPHP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="E..yPHP" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="E..yPHP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="E..yPHP" type="462c0819:PsiDirectoryNode" />
+              <item name="App" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="E..yPHP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="E..yPHP" type="462c0819:PsiDirectoryNode" />
+              <item name="App" type="462c0819:PsiDirectoryNode" />
+              <item name="Admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="E..yPHP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="E..yPHP" type="462c0819:PsiDirectoryNode" />
+              <item name="App" type="462c0819:PsiDirectoryNode" />
+              <item name="Admin" type="462c0819:PsiDirectoryNode" />
+              <item name="Include" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="E..yPHP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="E..yPHP" type="462c0819:PsiDirectoryNode" />
+              <item name="Public" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scope" />
     </panes>
   </component>
@@ -346,17 +206,18 @@
       <workItem from="1552627594436" duration="8815000" />
       <workItem from="1552866642662" duration="19001000" />
       <workItem from="1552886969293" duration="9878000" />
-      <workItem from="1552916685430" duration="42000" />
+      <workItem from="1552916685430" duration="294000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47113000" />
+    <option name="totallyTimeSpent" value="47365000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25723472" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20953912" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" />
@@ -379,9 +240,6 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Library/ClassTree.class.php">
@@ -552,20 +410,6 @@
     <entry file="file://$PROJECT_DIR$/Public/Uploads/3678960638285dac4788c87ba559cf04.jpg" />
     <entry file="file://$PROJECT_DIR$/Public/Admin/simditor/scripts/uploader.js" />
     <entry file="file://$PROJECT_DIR$/Public/Admin/simditor/scripts/simditor.js" />
-    <entry file="file://$PROJECT_DIR$/App/Admin/Include/Admin_head.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="15" column="72" selection-start-line="15" selection-start-column="64" selection-end-line="15" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Admin/Include/Admin_footer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/App/Admin/Include/Category.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
@@ -603,8 +447,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/App/Admin/Include/Content_add.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1431">
-          <caret line="154" column="6" selection-start-line="154" selection-start-column="6" selection-end-line="154" selection-end-column="6" />
+        <state relative-caret-position="702">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Admin/Include/Admin_head.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="17" column="9" lean-forward="true" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Admin/Include/Admin_footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="17" column="7" lean-forward="true" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
         </state>
       </provider>
     </entry>
