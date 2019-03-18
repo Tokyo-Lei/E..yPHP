@@ -58,8 +58,7 @@ include 'nav.php';
                                 <h3 class="h4">创建新分类</h3>
                             </div>
                             <div class="card-body">
-                                <form class="form-horizontal" id="cate_add" method="get" action="<?php echo $App_URL ?>Processing.php">
-                                    <input type="hidden" name="get" value="cate_add">
+                                <form class="form-horizontal"  method="post" action="<?php echo $App_URL ?>Processing.php">
                                     <div class="form-group row">
                                         <label class="col-sm-3 form-control-label">所属分类</label>
                                         <div class="col-sm-9">
@@ -166,7 +165,6 @@ include 'nav.php';
 
                                     <div class="form-group row">
                                         <div class="col-sm-4 offset-sm-3">
-
                                             <button type="submit" name="cate_add" class="btn btn-primary" >创建</button>
                                         </div>
                                     </div>

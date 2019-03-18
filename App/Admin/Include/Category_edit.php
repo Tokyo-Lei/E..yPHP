@@ -26,7 +26,6 @@ $cate_db = $_DB->select("category", [
     "cate_description",
     "cate_url",
     "sort"
-
 ],[
     "ORDER" => ["sort"=>"ASC"]
 ]);
@@ -45,17 +44,16 @@ $cate_db2 = $_DB->select("category", [
     "sort"
 
 ],[
-   "id" => intval($_GET['id'])
+    "id" => intval($_GET['id'])
 ]);
 
-print_r($cate_db2);
 
 //加载导航 分类页列表
 include 'nav.php';
 
 ?>
 
-<div class="content-inner">
+    <div class="content-inner">
     <!-- Page Header-->
     <header class="page-header">
         <div class="container-fluid">
@@ -74,8 +72,8 @@ include 'nav.php';
                             <h3 class="h4">编辑分类</h3>
                         </div>
                         <div class="card-body">
-                            <form class="form-horizontal" id="cate_add" method="get" action="<?php echo $App_URL ?>Processing.php">
-                                <input type="hidden" name="get" value="cate_update">
+                            <form class="form-horizontal" method="get" action="<?php echo $App_URL ?>Processing.php">
+                                <input type="hidden" name="cate_update" value="cate_update">
                                 <div class="form-group row">
                                     <label class="col-sm-3 form-control-label">所属分类</label>
                                     <div class="col-sm-9">
@@ -85,8 +83,8 @@ include 'nav.php';
 
 
 
-                                <?php
-                                     foreach($c_result as $row)
+                                            <?php
+                                            foreach($c_result as $row)
                                             {
                                                 echo "<option value='".$row['id']."'>".$row['cate_name']."</option>";
                                                 if(isset($row['sub'])){
@@ -200,24 +198,24 @@ include 'nav.php';
     </section>
 
 
-<!--<!--    <script type="text/javascript">-->
-<!--<!--        function cate_add() {-->
-<!--<!--            $.ajax({-->
-<!--<!--                type: "get",//方法类型-->
-<!--<!--                dataType:"json",//预期服务器返回的数据类型-->
-<!--<!--                url:"--><?php ////echo $admin_url ?><!--//Processing.php?ajax=cate_add" ,//url-->
-<!--//                async:false,//同步-->
-<!--//                cache:false,//不缓存-->
-<!--//                data:$('#cate_add').serialize(),-->
-<!--//                success:function (data) {-->
-<!--//                    alert(data.msg)-->
-<!--//                },-->
-<!--//                error:function () {-->
-<!--//                    alert("发生错误！");-->
-<!--//                }-->
-<!--//-->
-<!--//            });-->
-<!--//        }-->
-<!--//    </script>-->
+    <!--<!--    <script type="text/javascript">-->
+    <!--<!--        function cate_add() {-->
+    <!--<!--            $.ajax({-->
+    <!--<!--                type: "get",//方法类型-->
+    <!--<!--                dataType:"json",//预期服务器返回的数据类型-->
+    <!--<!--                url:"--><?php ////echo $admin_url ?><!--//Processing.php?ajax=cate_add" ,//url-->
+    <!--//                async:false,//同步-->
+    <!--//                cache:false,//不缓存-->
+    <!--//                data:$('#cate_add').serialize(),-->
+    <!--//                success:function (data) {-->
+    <!--//                    alert(data.msg)-->
+    <!--//                },-->
+    <!--//                error:function () {-->
+    <!--//                    alert("发生错误！");-->
+    <!--//                }-->
+    <!--//-->
+    <!--//            });-->
+    <!--//        }-->
+    <!--//    </script>-->
 
 <?php include 'Admin_footer.php'; ?>

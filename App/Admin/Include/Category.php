@@ -75,16 +75,11 @@ include 'nav.php';
                                     // 逆数组array_reverse()
                                     foreach ($c_result as $v){
 
-
-
-
-
-
                                         echo "<tr>";
                                         echo "<th scope='row'>".$v['id']."</th>";
                                         echo "<td>".$v['cate_name']."</td>";
                                         echo "<td>".$v['sort']."</td>";
-                                        echo "<td><a href='".$admin_url."category_edit.php?id=".$v['id']."' class='btn btn-info btn-sm' target='_top'>编辑</a> <a href='".$admin_url."Processing.php?dele_cate=".$v['id']."' class='btn btn-danger btn-sm'>删除</a></td>";
+                                        echo "<td><a href='".$admin_url."Category_edit.php?id=".$v['id']."' class='btn btn-info btn-sm' target='_top'>编辑</a> <a href='".$App_URL."Processing.php?dele_cate=".$v['id']."' class='btn btn-danger btn-sm'>删除</a></td>";
                                         echo "</tr>";
 
 
@@ -97,7 +92,7 @@ include 'nav.php';
                                                 echo "<th scope='row'>".$s['id']."</th>";
                                                 echo "<td>&nbsp;&nbsp;&nbsp;&nbsp;|-".$s['cate_name']."</td>";
                                                 echo "<td>".$s['sort']."</td>";
-                                                echo "<td><a href='#' class='btn btn-info btn-sm'>编辑</a> <a href='#' class='btn btn-danger btn-sm'>删除</a></td>";
+                                                echo "<td><a href='".$admin_url."Category_edit.php?id=".$s['id']."'' class='btn btn-info btn-sm'>编辑</a> <a href='".$App_URL."Processing.php?dele_cate=".$s['id']."' class='btn btn-danger btn-sm'>删除</a></td>";
                                                 echo "</tr>";
 
 
@@ -110,7 +105,7 @@ include 'nav.php';
                                                         echo "<th scope='row'>".$n['id']."</th>";
                                                         echo "<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-".$n['cate_name']."</td>";
                                                         echo "<td>".$n['sort']."</td>";
-                                                        echo "<td><a href='#' class='btn btn-info btn-sm'>编辑</a> <a href='#' class='btn btn-danger btn-sm'>删除</a></td>";
+                                                        echo "<td><a href='".$admin_url."Category_edit.php?id=".$n['id']."' class='btn btn-info btn-sm'>编辑</a> <a href='".$App_URL."Processing.php?dele_cate=".$n['id']."' class='btn btn-danger btn-sm'>删除</a></td>";
                                                         echo "</tr>";
                                                     }
                                                 }
