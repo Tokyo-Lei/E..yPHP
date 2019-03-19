@@ -34,10 +34,13 @@
                     <div class="icon bg-red"><i class="icon-padnote"></i></div>
                     <div class="title"><span>内容<br>文章数量</span>
                       <div class="progress">
-                        <div role="progressbar" style="width: 70%; height: 4px;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" class="progress-bar bg-red"></div>
+                          <?php
+                          $_count_content = $_DB->count("content");
+                          ?>
+                        <div role="progressbar" style="width: <?php echo $_count_content ?>%; height: 4px;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" class="progress-bar bg-red"></div>
                       </div>
                     </div>
-                    <div class="number"><strong>70</strong></div>
+                    <div class="number"><strong><?php echo $_count_content ?></strong></div>
                   </div>
                 </div>
                 <!-- Item -->

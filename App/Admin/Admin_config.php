@@ -59,6 +59,11 @@ require_once $_SERVER['DOCUMENT_ROOT'].'./Library/Php_error.php' ;
 \php_error\reportErrors();
 
 
+//加载备份类
+require_once(LIB_PATH.'/Backup.php');
+
+
+
 $_URL_= pathinfo($_SERVER['PHP_SELF']);
 $_URL_INCLUDE = pathinfo($_URL_['dirname']);
 

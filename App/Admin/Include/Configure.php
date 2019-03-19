@@ -31,6 +31,8 @@ $web = $_DB->select("basic","*",[
 
 
 
+
+
 include 'nav.php';
 
 
@@ -133,24 +135,7 @@ include 'nav.php';
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="card">
 
-                        <div class="card-header d-flex align-items-center">
-                            <h3 class="h4">备份</h3>
-                        </div>
-                        <div class="card-body">
-                            <form class="form-horizontal" method="post" action="">
-
-                                <div class="form-group">
-                                    <input type="submit" value="备份数据库" class="btn btn-primary">
-                                    <input type="submit" value="优化数据库" class="btn btn-primary">
-                                    <input type="submit" value="修复数据库" class="btn btn-primary">
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
 
 
     </section>

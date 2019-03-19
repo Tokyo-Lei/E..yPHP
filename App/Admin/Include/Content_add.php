@@ -14,7 +14,6 @@ require_once(ROOT_PATH . '/../Admin_config.php');
 
 if(!isset($_SESSION['username'])){
     echo "<script>window.location.href='$admin_url./login.php';</script>";
-
     exit();
 
 }
@@ -75,8 +74,6 @@ include 'nav.php';
                         </div>
                         <div class="card-body">
                             <form class="form-horizontal"  method="post" action="<?php echo $App_URL ?>Processing.php">
-
-
 
 
                                 <div class="form-group row">
@@ -164,6 +161,7 @@ include 'nav.php';
 
                                 <div class="form-group row">
                                     <div class="col-sm-4 form-control-label">
+                                        <input type="hidden"  name="content_time" value="<?php echo time(); ?>">
                                         <button type="submit" name="content_draft" class="btn btn-info" value="1">保存</button>
                                         <button type="submit" name="content_add" class="btn btn-success" >发布</button>
                                     </div>

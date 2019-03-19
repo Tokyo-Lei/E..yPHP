@@ -163,6 +163,45 @@ require_once (ROOT_PATH.'/Admin_config.php');
         exit;
     };
 
+
+
+    //撰写内容-发布
+    if(isset($_POST['content_add']) == 'content_add'){
+
+        $_DB->insert("content", [
+            "content_pid" => intval($_POST['content_pid']),
+            "content_title" =>Getpost::filterWords($_POST['content_title']),
+            "content_keyword" => Getpost::filterWords($_POST['content_keyword']),
+            "content_description" => Getpost::filterWords($_POST['content_description']),
+            "content_thumbnail" => Getpost::filterWords($_POST['content_thumbnail']),
+            "content_time" => intval($_POST['content_time']),
+            "content_text" => htmlentities($_POST['content_text']),
+            "content_draft" => 0
+        ]);
+        echo "<script>window.location.href='$App_URL_Include./Content_add.php'</script>";
+        exit;
+    };
+
+
+    //撰写内容-保存
+    if(isset($_POST['content_draft']) == 'content_draft'){
+
+        $_DB->insert("content", [
+            "content_pid" => intval($_POST['content_pid']),
+            "content_title" =>Getpost::filterWords($_POST['content_title']),
+            "content_keyword" => Getpost::filterWords($_POST['content_keyword']),
+            "content_description" => Getpost::filterWords($_POST['content_description']),
+            "content_thumbnail" => Getpost::filterWords($_POST['content_thumbnail']),
+            "content_time" => intval($_POST['content_time']),
+            "content_text" => htmlentities($_POST['content_text']),
+            "content_draft" => 1
+        ]);
+        echo "<script>window.location.href='$App_URL_Include./Content_add.php'</script>";
+        exit;
+    };
+
+
+
     //更新缓存
     if(isset($_GET['dele']) == 'del_cache'){
 
