@@ -148,7 +148,7 @@ $user_db = $_DB->select("user", [
 
 
 
-            <?php if($_URL_['filename'] == 'configure'){
+            <?php if($_URL_['filename'] == 'Configure'){
                 echo '<li class="active"><a href="'. $App_URL_Include .'Configure.php"> <i class="icon-home"></i>站点配置 </a></li>';
             }else{
                 echo '<li><a href="'. $App_URL_Include .'Configure.php"> <i class="icon-home"></i>站点配置 </a></li>';
