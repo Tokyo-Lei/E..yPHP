@@ -39,7 +39,7 @@ require_once (ROOT_PATH.'/Admin_config.php');
     //新增分类
     if(isset($_POST['cate_add'])){
         //如果分类关联PID大于3 就不能创建
-        if($_Swshuzu_PID >= 3){
+        if(@$_Swshuzu_PID >= 3){
             echo '<style type="text/css">*{ padding: 0; margin: 0; } div{ padding: 4px 48px;} body{ background: #fff; font-family: "微软雅黑"; color: #333;font-size:24px} h1{ font-size: 100px; font-weight: normal; margin-bottom: 12px; } p{ line-height: 1.8em; font-size: 36px } a,a:hover{color:blue;}</style>
 <div style="padding: 24px 48px;"> <h1>:(</h1><p>目前只支持创建三级分类！ </p></div>';
             echo '<script> setTimeout("history.back()", 2000); </script>';

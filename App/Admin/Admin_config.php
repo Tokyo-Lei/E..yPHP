@@ -4,6 +4,10 @@ define('ADMIN_PATH',dirname(__FILE__));
 //定义session
 define('LIB_PATH',$_SERVER['DOCUMENT_ROOT'].'/Library');
 
+date_default_timezone_set('PRC');
+
+
+
 
 //定义Admin链接
 $admin_url='http://'.$_SERVER['HTTP_HOST'].substr($_SERVER['PHP_SELF'],0,strrpos($_SERVER['PHP_SELF'],'/')+1);
@@ -17,6 +21,8 @@ $App_URL_Include = 'http://'.$_SERVER['SERVER_NAME'].'/App/Admin/Include/';
 
 //定于静态链接
 $PUBLIC_URL ='http://'.$_SERVER['SERVER_NAME'].'/Public/';
+
+
 
 
 define('UPLOAD_PATH',$_SERVER['DOCUMENT_ROOT'].'/Public/');
@@ -45,6 +51,8 @@ require_once (LIB_PATH.'/File.class.php');
 //加载分页类
 require_once (LIB_PATH.'/Page.php');
 
+//加载编辑器上传类
+require_once(LIB_PATH.'/Editormd.uploader.class.php');
 
 //加载phpError类
 require_once $_SERVER['DOCUMENT_ROOT'].'./Library/Php_error.php' ;

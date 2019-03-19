@@ -13,6 +13,5 @@
     <link rel="stylesheet" href="<?php echo $PUBLIC_URL ?>Admin/css/style.default.css" id="theme-stylesheet">
     <link rel="stylesheet" href="<?php echo $PUBLIC_URL ?>Admin/css/custom.css">
 
-    <link rel="stylesheet" href="<?php echo $PUBLIC_URL ?>Admin/simditor/styles/simditor.css" type="text/css"/>
-    <link rel="shortcut icon" href="<?php echo $PUBLIC_URL ?>Admin/img/favicon.ico">
+      <link rel="stylesheet" href="<?php echo $PUBLIC_URL ?>Common/editormd/editormd.min.css">
   </head>
