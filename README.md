@@ -9,6 +9,17 @@ Un...反正很奇怪的思维，不好好写MVC思想和依赖Composer关系。
 当然了，PHP7.X版本都可以使用。
 模板引擎采用twig1.37.1版，数据库采用Medoo1.6版。
 
+
+## 日志
+
+
+- 2019年3月19日 完成基本配置页、内容页（分页未完成）、更换editormd编辑器、完成上传图片
+- 2019年3月18日 完成分类页、用户页、内容页编辑插件
+- 2019年3月15日 完成首页、路径重构
+- 2019年3月14日 完成大体框架、后台制作启动
+- 2019年3月13日 创建E..yPHP项目（为了解决虚拟主机问题）
+
+
 ## 框架使用
 
 本代码开源遵循Apache Licence 2.0协议。
@@ -40,7 +51,7 @@ App		前后台PHP文件目录
 Public		放置CSS、JS、IMG等目录
    |-	Home	前台静态资源目录
    |-	Admin	后台静态资源目录
-Library		函数目录
+Library		函数目录 （不定期新增）
    |-	Medoo.php	数据库类            
    |-	Php_error.php	错误提示类
    |-	Twig	模板引擎类
@@ -63,10 +74,14 @@ Twig是一款灵活、快速、安全的PHP模板引擎。
 ## 具体如何使用？
 
 index.php为例：加载模板文件
-`echo $twig->render('index.html');  `
+```php
+echo $twig->render('index.html');  
+```
 数据传值：
-`$name = '你好，全端观察世界！';
-echo $twig->render('index.html',array('dete'=> $name));       `
+```php
+$name = '你好，全端观察世界！';
+echo $twig->render('index.html',array('dete'=> $name));
+```
 具体语法请参考Twig
 
 ## 数据使用
