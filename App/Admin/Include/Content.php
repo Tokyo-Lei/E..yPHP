@@ -12,7 +12,8 @@ require_once(ROOT_PATH . '/Admin_config.php');
 
 
 if(!isset($_SESSION['username'])){
-    echo "<script>window.location.href='$admin_url./Admin_login.php';</script>";
+    echo "<script>window.location.href='$admin_url./login.php';</script>";
+
     exit();
 
 }

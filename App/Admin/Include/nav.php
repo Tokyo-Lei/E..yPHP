@@ -94,7 +94,7 @@ $user_db = $_DB->select("user", [
             <?php if($_URL_['filename'] == 'Content_add' or $_URL_['filename'] == 'Content'){
                 echo '
 
-                <li class="active"><a href="#contentdownDropdown" aria-expanded="true" data-toggle="collapse"> <i class="icon-interface-windows"></i>内容管理 </a>
+                <li class="active"><a href="#contentdownDropdown" aria-expanded="true" data-toggle="collapse"> <i class="icon-grid"></i>内容管理 </a>
                     <ul id="contentdownDropdown" class="collapse list-unstyled ">
                         <li><a href="'. $App_URL_Include .'Content_add.php">撰写内容</a></li>
                         <li><a href="'. $App_URL_Include .'Content.php" target="_parent">管理内容</a></li>
@@ -105,7 +105,7 @@ $user_db = $_DB->select("user", [
             }else{
                 echo '
                 
-                 <li><a href="#contentdownDropdown" aria-expanded="false" data-toggle="collapse"> <i class="icon-interface-windows"></i>内容管理 </a>
+                 <li><a href="#contentdownDropdown" aria-expanded="false" data-toggle="collapse"> <i class="icon-grid"></i>内容管理 </a>
                     <ul id="contentdownDropdown" class="collapse list-unstyled ">
                         <li><a href="'. $App_URL_Include .'Content_add.php">撰写内容</a></li>
                         <li><a href="'. $App_URL_Include .'Content.php" target="_parent">管理内容</a></li>
@@ -122,7 +122,7 @@ $user_db = $_DB->select("user", [
             <?php if($_URL_['filename'] == 'User' or $_URL_['filename'] == 'User_edit' ){
                 echo '
 
-                <li class="active"><a href="#userdownDropdown" aria-expanded="true" data-toggle="collapse"> <i class="icon-interface-windows"></i>用户管理 </a>
+                <li class="active"><a href="#userdownDropdown" aria-expanded="true" data-toggle="collapse"> <i class="icon-user"></i>用户管理 </a>
                     <ul id="userdownDropdown" class="collapse list-unstyled ">
                         <li><a href="'. $App_URL_Include .'User.php" target="_parent">用户数据</a></li>
                     </ul>
@@ -132,7 +132,7 @@ $user_db = $_DB->select("user", [
             }else{
                 echo '
                 
-                 <li><a href="#userdownDropdown" aria-expanded="false" data-toggle="collapse"> <i class="icon-interface-windows"></i>用户管理 </a>
+                 <li><a href="#userdownDropdown" aria-expanded="false" data-toggle="collapse"> <i class="icon-user"></i>用户管理 </a>
                     <ul id="userdownDropdown" class="collapse list-unstyled ">
                         <li><a href="'. $App_URL_Include .'User.php" target="_parent">用户数据</a></li>
                     </ul>
@@ -156,6 +156,6 @@ $user_db = $_DB->select("user", [
             ?>
 
 
-            <li><a href="/"> <i class="icon-interface-windows"></i>返回前台 </a></li>
+            <li><a href="/"> <i class="icon-screen"></i>返回前台 </a></li>
 
     </nav>

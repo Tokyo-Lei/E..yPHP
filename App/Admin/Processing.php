@@ -108,10 +108,6 @@ require_once (ROOT_PATH.'/Admin_config.php');
 
 
 
-
-
-
-
     //编辑用户
     if(isset($_GET['user_update']) == 'user_update'){
         $_DB->update("user", [
@@ -129,10 +125,43 @@ require_once (ROOT_PATH.'/Admin_config.php');
     };
 
 
+    //更新基本设置
+    if(isset($_POST['web_post']) == 'web_post'){
+        $_DB->update("basic", [
+            "web_title" => Getpost::filterWords($_POST['web_title']),
+            "web_email" =>Getpost::filterWords($_POST['web_email']),
+            "web_copyright" => htmlentities($_POST['web_copyright'])
+        ],[
+            "id" => 1,
+        ]);
+        echo "<script>window.location.href='$App_URL_Include./Configure.php'</script>";
+        exit;
+    };
 
+    //更新关键词
+    if(isset($_POST['seo_post']) == 'seo_post'){
+        $_DB->update("basic", [
+            "seo_keyword" => Getpost::filterWords($_POST['seo_keyword']),
+            "seo_description" =>Getpost::filterWords($_POST['seo_description']),
+            "seo_count" => htmlentities($_POST['seo_count'])
+        ],[
+            "id" => 1,
+        ]);
+        echo "<script>window.location.href='$App_URL_Include./Configure.php'</script>";
+        exit;
+    };
 
-
-
+    //更新设置
+    if(isset($_POST['basic_post']) == 'basic_post'){
+        $_DB->update("basic", [
+            "basic_num" => intval($_POST['basic_num']),
+            "basic_image" =>htmlentities($_POST['basic_image']),
+        ],[
+            "id" => 1,
+        ]);
+        echo "<script>window.location.href='$App_URL_Include./Configure.php'</script>";
+        exit;
+    };
 
     //更新缓存
     if(isset($_GET['dele']) == 'del_cache'){
@@ -148,21 +177,4 @@ require_once (ROOT_PATH.'/Admin_config.php');
     }
 
 
-
-
-
-
-
-
-//if ($_REQUEST['ajax'] == 'cate_add') {
-//
-//
-//
-//    $result["msg"] = 1;
-//    echo json_encode($result);
-//
-//
-//
-//}
-//
 

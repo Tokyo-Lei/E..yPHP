@@ -10,7 +10,8 @@ require_once(ROOT_PATH . '/../Admin_config.php');
 //如果用户空提交，返回重登录
 
 if(!isset($_SESSION['username'])){
-    echo "<script>window.location.href='$admin_url./Admin_login.php';</script>";
+    echo "<script>window.location.href='$admin_url./login.php';</script>";
+
     exit();
 }
 

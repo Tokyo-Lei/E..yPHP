@@ -6,7 +6,7 @@ define('LIB_PATH',$_SERVER['DOCUMENT_ROOT'].'/Library');
 
 date_default_timezone_set('PRC');
 
-
+print_r( date()) ;
 
 
 //定义Admin链接

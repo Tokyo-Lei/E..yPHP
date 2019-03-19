@@ -12,7 +12,8 @@ require_once(ROOT_PATH . '/../Admin_config.php');
 
 
 if(!isset($_SESSION['username'])){
-    echo "<script>window.location.href='$admin_url./Admin_login.php';</script>";
+    echo "<script>window.location.href='$admin_url./login.php';</script>";
+
     exit();
 
 }
@@ -27,6 +28,8 @@ if(!isset($_SESSION['username'])){
 $web = $_DB->select("basic","*",[
 "id" => 1
 ]);
+
+
 
 include 'nav.php';
 
@@ -58,10 +61,10 @@ include 'nav.php';
                         </div>
                         <div class="card-body">
 
-                            <form>
+                            <form method="post" action="<?php echo $App_URL ?>Processing.php">
                                 <div class="form-group">
                                     <label class="form-control-label">网站名称</label>
-                                    <input type="email"  class="form-control" name="web_title" value="<?php echo $web[0]['web_title'] ?>">
+                                    <input type="text"  class="form-control" name="web_title" value="<?php echo $web[0]['web_title'] ?>">
                                 </div>
                                 <div class="form-group">
                                     <label class="form-control-label">网站邮箱</label>
@@ -72,7 +75,7 @@ include 'nav.php';
                                     <input type="text"  class="form-control" name="web_copyright" value="<?php echo $web[0]['web_copyright'] ?>">
                                 </div>
                                 <div class="form-group">
-                                    <input type="submit" value="更新" class="btn btn-primary" >
+                                    <input type="submit" name="web_post" value="更新" class="btn btn-primary" >
                                 </div>
                             </form>
                         </div>
@@ -85,7 +88,7 @@ include 'nav.php';
                             <h3 class="h4">推广</h3>
                         </div>
                         <div class="card-body">
-                            <form class="form-horizontal" method="post" action="">
+                            <form class="form-horizontal" method="post" action="<?php echo $App_URL ?>Processing.php">
                                 <div class="form-group">
                                     <label class="form-control-label">SEO关键词</label>
                                         <input  type="text"  class="form-control" name="seo_keyword" value="<?php echo $web[0]['seo_keyword'] ?>">
@@ -99,7 +102,7 @@ include 'nav.php';
                                         <input type="text"   class="form-control " name="seo_count" value="<?php echo $web[0]['seo_count'] ?>">
                                 </div>
                                 <div class="form-group">
-                                        <input type="submit" value="更新" class="btn btn-primary">
+                                        <input type="submit" name="seo_post" value="更新" class="btn btn-primary">
                                 </div>
                             </form>
                         </div>
@@ -113,7 +116,7 @@ include 'nav.php';
                             <h3 class="h4">配置</h3>
                         </div>
                         <div class="card-body">
-                            <form class="form-horizontal" method="post" action="">
+                            <form class="form-horizontal" method="post" action="<?php echo $App_URL ?>Processing.php">
                                 <div class="form-group">
                                     <label class="form-control-label">分页数量</label>
                                     <input  type="text"  class="form-control" name="basic_num" value="<?php echo $web[0]['basic_num'] ?>">
@@ -124,7 +127,7 @@ include 'nav.php';
                                 </div>
 
                                 <div class="form-group">
-                                    <input type="submit" value="更新" class="btn btn-primary">
+                                    <input type="submit" name="basic_post" value="更新" class="btn btn-primary">
                                 </div>
                             </form>
                         </div>
