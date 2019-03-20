@@ -9,7 +9,7 @@
 
 [![](https://img.shields.io/badge/version-0.01-green.svg)](https://img.shields.io/badge/version-0.01-green.svg)
 [![](https://img.shields.io/badge/php-7+-brightgreen.svg)](https://img.shields.io/badge/php-7+-brightgreen.svg)
-[![](https://img.shields.io/badge/mysql-5+--SNAPSHOT-orange.svg)](https://img.shields.io/badge/mysql-5+--SNAPSHOT-orange.svg)
+[![](https://img.shields.io/badge/mysql-5+-orange.svg)](https://img.shields.io/badge/mysql-5+-orange.svg)
 [![](https://img.shields.io/badge/license-Apache%202-blue.svg)](https://img.shields.io/badge/license-Apache%202-blue.svg)
 
 ## 这个框架的理由?
@@ -79,6 +79,11 @@ Cache		模板缓存目录
 Config.php		前台框架配置文件
 index.php		前台框架入口文件
 ```
+
+## 后台截图
+
+![](Public\Uploads\1.png)
+![](Public\Uploads\2.png)
 
 ## 模板引擎
 Twig是一款灵活、快速、安全的PHP模板引擎。
@@ -158,6 +163,8 @@ if ($rule_0 = "321"){
 数据库处理 [Medoo][2] 
 错误提示 [PHP ERROR][3]
 模板引擎 [TWIG][4]
+后台模板 [Bootstrapious][5]
+
 ## 感谢
 
 汶（广州）   解决了技术方案
@@ -168,3 +175,4 @@ if ($rule_0 = "321"){
   [2]: https://medoo.lvtao.net/
   [3]: https://github.com/JosephLenton/PHP-Error
   [4]: https://twig.symfony.com/
+  [5]: https://bootstrapious.com/p/bootstrap-4-dark-admin-premium
