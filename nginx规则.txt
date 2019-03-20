@@ -1,0 +1,13 @@
+if (!-d $request_filename){
+	set $rule_0 1$rule_0;
+}
+if (!-f $request_filename){
+	set $rule_0 2$rule_0;
+}
+if ($args ~ "^(.*)$"){
+	set $rule_0 3$rule_0;
+}
+if ($rule_0 = "321"){
+	rewrite ^/index.html$ /index.php;
+}
+	rewrite ^/admin$ /App/Admin/Index.php;
