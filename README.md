@@ -32,11 +32,10 @@ Un...反正很奇怪的思维，不好好写MVC思想和依赖Composer关系。
 
 ## 框架使用
 
-本代码开源遵循Apache Licence 2.0协议。
-
-支持PHP7.X以上版本，建议Win平台Apache+php+mysql组合环境使用。
-Liunx平台晚些更新。
-如果不使用数据库，请在Config.php注释数据库配置即可。
+- 本代码开源遵循Apache Licence 2.0协议。
+- 支持PHP7.X以上版本，建议Win平台Apache+php+mysql组合环境使用。
+- Liunx平台晚些更新。
+- 如果不使用数据库，请在Config.php注释数据库配置即可。
 ```php
 //配置数据库
 $_DB['mysql']['pconnect'] = true;//设置是否长连接
@@ -86,9 +85,9 @@ index.php		前台框架入口文件
 ![](/Public/Uploads/2.png)
 
 ## 模板引擎
-Twig是一款灵活、快速、安全的PHP模板引擎。
-快速：Twig将模板编译为纯粹的，最优化的PHP代码。它的开销与常规的PHP代码相比，已经降到了极低。
-安全：Twig拥有沙盒模式，用于评估未受信任的模板代码。这使得Twig可以用于允许用户自行修改模板设计的应用程序中。
+- Twig是一款灵活、快速、安全的PHP模板引擎。
+- 快速：Twig将模板编译为纯粹的，最优化的PHP代码。它的开销与常规的PHP代码相比，已经降到了极低。
+- 安全：Twig拥有沙盒模式，用于评估未受信任的模板代码。这使得Twig可以用于允许用户自行修改模板设计的应用程序中。
 
 ## 具体如何使用？
 
@@ -105,7 +104,8 @@ echo $twig->render('index.html',array('dete'=> $name));
 
 ## 数据使用
 
-Medoo是一款超轻量级的PHP SQL数据库框架,由社交网站Catfan和开源项目Qatrix的创始人开发。提供了简单,易学,灵活的API,提升开发Web应用的效率与性能,而且体积只有22KB。
+- Medoo是一款超轻量级的PHP SQL数据库框架,由社交网站Catfan和开源项目Qatrix的创始人开发。
+- 提供了简单,易学,灵活的API,提升开发Web应用的效率与性能,而且体积只有22KB。
 new.php为例,获取数据传值模板：
 ```php
 $datas = $_DB->select("tokyo_users", [
@@ -159,16 +159,16 @@ if ($rule_0 = "321"){
 
 ## 应用第三方开源
 
-编辑器 [Editor.md Examples][1]   
-数据库处理 [Medoo][2] 
-错误提示 [PHP ERROR][3]
-模板引擎 [TWIG][4]
-后台模板 [Bootstrapious][5]
+- 编辑器 [Editor.md Examples][1]   
+- 数据库处理 [Medoo][2] 
+- 错误提示 [PHP ERROR][3]
+- 模板引擎 [TWIG][4]
+- 后台模板 [Bootstrapious][5]
 
 ## 感谢
 
-汶（广州）   解决了技术方案
-老钱（上海） 提出了思路方案
+- 汶（广州）   解决了技术方案
+- 老钱（上海） 提出了思路方案
 
 
   [1]: http://pandao.github.io/editor.md/examples/
