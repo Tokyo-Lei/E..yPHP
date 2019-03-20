@@ -1,6 +1,12 @@
+
+
 # E..yPHP
 
 ![](logo.jpg)
+
+[![](https://img.shields.io/badge/version-0.01-green.svg)](https://img.shields.io/badge/version-0.01-green.svg)
+[![](https://img.shields.io/badge/php-7+-brightgreen.svg)](https://img.shields.io/badge/php7-brightgreen.svg)
+[![](https://img.shields.io/badge/license-Apache%202-blue.svg)](https://img.shields.io/badge/license-Apache%202-blue.svg)
 
 ## 这个框架的理由?
 
@@ -12,7 +18,7 @@ Un...反正很奇怪的思维，不好好写MVC思想和依赖Composer关系。
 
 ## 日志
 
-
+- 2019年3月20日 完成l
 - 2019年3月19日 完成基本配置页、内容页（分页未完成）、更换editormd编辑器、完成上传图片
 - 2019年3月18日 完成分类页、用户页、内容页编辑插件
 - 2019年3月15日 完成首页、路径重构
