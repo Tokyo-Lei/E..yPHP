@@ -125,7 +125,7 @@ new.html为例,模板循环：
 
 ## nginx规则
 ```php
-<IfModule mod_rewrite.c>
+
 if (!-d $request_filename){
 	set $rule_0 1$rule_0;
 }
@@ -139,7 +139,7 @@ if ($rule_0 = "321"){
 	rewrite ^/index.html$ /index.php;
 }
 	rewrite ^/admin$ /App/Admin/Index.php;
-</IfModule>          
+      
 ```
 
 ## 应用第三方开源
