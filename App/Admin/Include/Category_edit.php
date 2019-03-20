@@ -49,7 +49,7 @@ $cate_db2 = $_DB->select("category", [
 
 
 //加载导航 分类页列表
-include 'nav.php';
+include 'Menu.php';
 
 ?>
 

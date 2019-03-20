@@ -33,7 +33,7 @@ $cate_db = $_DB->select("category", [
 $c_result=ClassTree::hTree($cate_db);
 
 //加载导航 分类页列表
-include 'nav.php';
+include 'Menu.php';
 
 ?>
 

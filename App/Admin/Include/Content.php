@@ -23,9 +23,31 @@ if(!isset($_SESSION['username'])){
 <!-- 加载页头 -->
 <?php include 'Admin_head.php';
 
-include 'nav.php';
+include 'Menu.php';
+
+$_count_content = $_DB->count("content");
+$web = $_DB->select("basic",["basic_num"],["id" => 1]);
 
 
+//文章总数
+$totalItems = $_count_content;
+//设置页面显示数量
+$itemsPerPage = $web[0]['basic_num'];
+//当前页
+if(isset($_GET['page'])==""){
+    $currentPage = 1;
+}else{
+    $currentPage = $_GET['page'];
+}
+$urlPattern = $App_URL_Include.'Content.php?page=(:num)';
+$paginator = new Paginator($totalItems, $itemsPerPage, $currentPage, $urlPattern);
+
+
+$new_currentPage = ($currentPage-1)*$web[0]['basic_num'];
+
+
+
+//获取内容数据
 $content_db = $_DB->select("content", [
     "[>]category" => ["content.content_pid" => "id"],
 ], [
@@ -34,11 +56,9 @@ $content_db = $_DB->select("content", [
     "content.content_title",
     "content.content_time",
     "content.content_draft"
-
-
-]);
-
-
+],
+    ["LIMIT" => [$new_currentPage, $web[0]['basic_num']]]
+);
 
 ?>
 
@@ -105,17 +125,6 @@ $content_db = $_DB->select("content", [
                     </div>
                 </div>
 
-
-                <?php
-
-
-                $totalItems = 50;
-                $itemsPerPage = 10;
-                $currentPage = 1;
-                $urlPattern = $App_URL_Include.'Content.php?page=(:num)';
-                $paginator = new Paginator($totalItems, $itemsPerPage, $currentPage, $urlPattern);
-
-                ?>
                 <div class="col-lg-12">
 
                     <nav>
@@ -137,7 +146,7 @@ $content_db = $_DB->select("content", [
                                 <?php endforeach; ?>
 
                                 <?php if ($paginator->getNextUrl()): ?>
-                                    <li class="page-item has-shadow"><a class="page-link" href="<?php echo $paginator->getNextUrl(); ?>">返回首页</a></li>
+                                    <li class="page-item has-shadow"><a class="page-link" href="<?php echo $paginator->getNextUrl(); ?>">下一页</a></li>
                                 <?php endif; ?>
                             </ul>
 

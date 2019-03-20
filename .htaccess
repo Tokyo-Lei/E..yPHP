@@ -7,10 +7,10 @@
 
   RewriteCond %{QUERY_STRING} ^(.*)$
   RewriteRule ^index.html$ index.php
-  RewriteRule ^admin$ /App/Admin/index.php
+  RewriteRule ^admin$ /App/Admin/Index.php
   ReWriteRule ^new.html$ /App/Home/new.php
   ReWriteRule ^content_([0-9]+).html$ /App/Home/content.php?id=$1
 
 
-  ErrorDocument 404 /404.html
+  ErrorDocument 404 /Public/404.html
 </IfModule>

@@ -24,7 +24,7 @@ if(!isset($_SESSION['username'])){
 <?php include 'Admin_head.php';
 
 
-//调出分类数据
+//调出配置数据
 $web = $_DB->select("basic","*",[
 "id" => 1
 ]);
@@ -33,7 +33,7 @@ $web = $_DB->select("basic","*",[
 
 
 
-include 'nav.php';
+include 'Menu.php';
 
 
 

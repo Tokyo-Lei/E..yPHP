@@ -46,7 +46,7 @@ $c_result=ClassTree::hTree($cate_db);
 
 
 <?php
-include 'nav.php';
+include 'Menu.php';
 
 
 ?>

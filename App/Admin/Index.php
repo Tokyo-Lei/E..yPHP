@@ -20,8 +20,8 @@ if(!isset($_SESSION['username'])){
 
 // 加载页头
 include 'Include/Admin_head.php';
-include 'Include/nav.php';
-include 'Include/home.php';
+include 'Include/Menu.php';
+include 'Include/Home.php';
 
 
 

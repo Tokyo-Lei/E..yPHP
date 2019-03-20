@@ -1573,8 +1573,8 @@
              * If the path can't be removed, then the original path is returned.
              *
              * For example if root is 'C:/users/projects/my_site',
-             * and the file is 'C:/users/projects/my_site/index.php',
-             * then the root is removed, and we are left with just 'index.php'.
+             * and the file is 'C:/users/projects/my_site/Index.php',
+             * then the root is removed, and we are left with just 'Index.php'.
              *
              * This is to remove line noise; you don't need to be told the
              * 'C:/whatever' bit 20 times.

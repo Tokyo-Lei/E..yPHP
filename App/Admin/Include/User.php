@@ -16,10 +16,33 @@ if(!isset($_SESSION['username'])){
 }
 
 
+$_count_content = $_DB->count("user");
+$web = $_DB->select("basic",["basic_num"],["id" => 1]);
+
+
+//文章总数
+$totalItems = $_count_content;
+//设置页面显示数量
+$itemsPerPage = $web[0]['basic_num'];
+//当前页
+if(isset($_GET['page'])==""){
+    $currentPage = 1;
+}else{
+    $currentPage = $_GET['page'];
+}
+$urlPattern = $App_URL_Include.'User.php?page=(:num)';
+$paginator = new Paginator($totalItems, $itemsPerPage, $currentPage, $urlPattern);
+
+
+$new_currentPage = ($currentPage-1)*$web[0]['basic_num'];
+
+
+
+
 //加载页头
 include 'Admin_head.php';
 
-//调出分类数据
+//调出用户数据
 $user_db_list = $_DB->select("user", [
     "id",
     "username",
@@ -28,12 +51,13 @@ $user_db_list = $_DB->select("user", [
     "level"
 
 ],[
-    "ORDER" => ["id"=>"ASC"]
+    "ORDER" => ["id"=>"ASC"],
+    "LIMIT" => [$new_currentPage, $web[0]['basic_num']]
 ]);
 
 
 //加载导航 分类页列表
-include 'nav.php';
+include 'Menu.php';
 
 ?>
 
@@ -109,16 +133,7 @@ include 'nav.php';
 
 
 
-<?php
 
-
-                $totalItems = 50;
-                $itemsPerPage = 10;
-                $currentPage = 1;
-                $urlPattern = $App_URL_Include.'User.php?page=(:num)';
-                $paginator = new Paginator($totalItems, $itemsPerPage, $currentPage, $urlPattern);
-
-?>
             <div class="col-lg-12">
 
                 <nav>

@@ -186,6 +186,13 @@ require_once (ROOT_PATH.'/Admin_config.php');
     //撰写内容-保存
     if(isset($_POST['content_draft']) == 'content_draft'){
 
+        if($_POST['content_pid'] == 0){
+            echo '<style type="text/css">*{ padding: 0; margin: 0; } div{ padding: 4px 48px;} body{ background: #fff; font-family: "微软雅黑"; color: #333;font-size:24px} h1{ font-size: 100px; font-weight: normal; margin-bottom: 12px; } p{ line-height: 1.8em; font-size: 36px } a,a:hover{color:blue;}</style>
+<div style="padding: 24px 48px;"> <h1>:(</h1><p>您还没有选择分类！ </p></div>';
+            echo '<script> setTimeout("history.back()", 1000); </script>';
+            exit();
+        }
+
         $_DB->insert("content", [
             "content_pid" => intval($_POST['content_pid']),
             "content_title" =>Getpost::filterWords($_POST['content_title']),
