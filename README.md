@@ -2,7 +2,7 @@
 
 # E..yPHP
 
-![](logo.jpg)
+![](/Public/Uploads/logo.jpg)
 
 
 
@@ -82,8 +82,8 @@ index.php		前台框架入口文件
 
 ## 后台截图
 
-![](Public\Uploads\1.png)
-![](Public\Uploads\2.png)
+![](/Public/Uploads/1.png)
+![](/Public/Uploads/2.png)
 
 ## 模板引擎
 Twig是一款灵活、快速、安全的PHP模板引擎。
