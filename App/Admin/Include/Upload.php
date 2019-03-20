@@ -5,23 +5,21 @@
     define('ROOT_PATH',dirname(__FILE__));
     //加载配置
     require_once(ROOT_PATH . '/../Admin_config.php');
+    $web = $_DB->select("basic",["basic_image"],["id" => 1]);
+    $img_img = html_entity_decode($web[0]['basic_image']);
+    $img_img2 = explode(",",$img_img);
 
-    //header("Content-Type:application/json; charset=utf-8"); // Unsupport IE
+
     header("Content-Type:text/html; charset=utf-8");
     header("Access-Control-Allow-Origin: *");
-
-
-
-//   error_reporting(E_ALL & ~E_NOTICE);
 
 
 	$savePath = UPLOAD_PATH.'Uploads/';
 	$saveURL  = $PUBLIC_URL.'Uploads/';
 
-	$formats  = array(
-		'image' => array('gif', 'jpg', 'jpeg', 'png', 'bmp')
-	);
-
+	$formats  = [
+		'image' => $img_img2
+    ];
     $name = 'editormd-image-file';
 
     if (isset($_FILES[$name]))

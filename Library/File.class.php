@@ -210,9 +210,9 @@ static public function removedir($dir){
         return strtolower($pathinfo['extension']);
     }
     function createaccessfile($path){
-        if(!file_exists($path.'index.htm')){
+        if(!file_exists($path.'index.html')){
             $content=' ';
-            file::writetofile($path.'index.htm',$content);
+            file::writetofile($path.'index.html',$content);
         }
         if(!file_exists($path.'.htaccess')){
             $content='Deny from all';

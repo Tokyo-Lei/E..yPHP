@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: 
+Disallow: /App/
+Disallow: /Library/
+Disallow: /Public/
+Disallow: /Templates/
+Sitemap: http://ÄúµÄÓòÃû.com/sitemap.xml

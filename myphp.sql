@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50553
 File Encoding         : 65001
 
-Date: 2019-03-19 15:53:08
+Date: 2019-03-20 10:06:18
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -35,7 +35,7 @@ CREATE TABLE `easy_basic` (
 -- ----------------------------
 -- Records of easy_basic
 -- ----------------------------
-INSERT INTO `easy_basic` VALUES ('1', 'E..yPHP', 'kyomini@qq.com', 'Copyright © 2018 - 2019 www.kyotos.top By NaokiOno All Rights Reserved.', '无MVC,简单,PHP,MYSQL,喜欢', '史上最简单的无MVC框架思想的老PHP', '##', '6', '&quot;gif&quot;, &quot;jpg&quot;,&quot;jpeg&quot;,&quot;png&quot;,&quot;bmp&quot;');
+INSERT INTO `easy_basic` VALUES ('1', 'E..yPHP', 'kyomini@qq.com', 'Copyright © 2018 - 2019 www.kyotos.top By NaokiOno All Rights Reserved.', '无MVC,简单,PHP,MYSQL,喜欢', '史上最简单的无MVC框架思想的老PHP', '##', '5', 'gif, jpg,jpeg,png,bmp');
 
 -- ----------------------------
 -- Table structure for easy_category
@@ -50,12 +50,14 @@ CREATE TABLE `easy_category` (
   `cate_url` varchar(255) DEFAULT NULL,
   `sort` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of easy_category
 -- ----------------------------
 INSERT INTO `easy_category` VALUES ('1', '0', 'CN / ChangChun', '长春印象', '「古朴和清新」人生80%的时间在这里。', '#', '1');
+INSERT INTO `easy_category` VALUES ('2', '0', '纽约', 'newyork', 'newyork', '#', '2');
+INSERT INTO `easy_category` VALUES ('3', '0', '日本', '1', '1', '1', '1');
 
 -- ----------------------------
 -- Table structure for easy_content
@@ -72,12 +74,18 @@ CREATE TABLE `easy_content` (
   `content_time` varchar(255) NOT NULL,
   `content_draft` int(2) DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of easy_content
 -- ----------------------------
 INSERT INTO `easy_content` VALUES ('1', '1', '测试', '测试', '测试', '测试', '测试测试测试![](http://127.0.0.1/Public/Uploads/HCIgC_IMG_51881.png)', '1552978511', '1');
+INSERT INTO `easy_content` VALUES ('2', '3', '魅力的樱花啊樱花', '魅力的樱花啊樱花', '魅力的樱花啊樱花', '@', '魅力的樱花啊樱花', '1553041055', '1');
+INSERT INTO `easy_content` VALUES ('3', '2', '厉害了我的国', '厉害了', '厉害了', '@', '厉害了我的国', '1553041073', '1');
+INSERT INTO `easy_content` VALUES ('4', '2', '真他妈讨厌', '真他妈讨厌', '真他妈讨厌', '#', '真他妈讨厌真他妈讨厌', '1553041094', '1');
+INSERT INTO `easy_content` VALUES ('5', '1', '真他妈讨厌2', '真他妈讨厌2', '真他妈讨厌2', '@', '真他妈讨厌2真他妈讨厌2', '1553041116', '1');
+INSERT INTO `easy_content` VALUES ('6', '1', '你这SB跟屁虫', '你这SB跟屁虫', '你这SB跟屁虫', '你这SB跟屁虫', '你这SB跟屁虫', '1553041125', '1');
+INSERT INTO `easy_content` VALUES ('7', '3', '日本文化', '日本文化', '日本文化', '日本文化', '日本有太多的文化', '1553041271', '1');
 
 -- ----------------------------
 -- Table structure for easy_counter
@@ -90,7 +98,7 @@ CREATE TABLE `easy_counter` (
 -- ----------------------------
 -- Records of easy_counter
 -- ----------------------------
-INSERT INTO `easy_counter` VALUES ('29');
+INSERT INTO `easy_counter` VALUES ('30');
 
 -- ----------------------------
 -- Table structure for easy_user
