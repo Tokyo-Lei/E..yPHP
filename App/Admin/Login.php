@@ -6,7 +6,6 @@ define('IS_MyPHP', TRUE);
 require_once (ROOT_PATH.'/Admin_config.php');
    include 'Include/Admin_head.php';
 ?>
-
   <body>
     <div class="page login-page">
       <div class="container d-flex align-items-center">

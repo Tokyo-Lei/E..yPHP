@@ -164,7 +164,6 @@ require_once (ROOT_PATH.'/Admin_config.php');
     };
 
 
-
     //撰写内容-发布
     if(isset($_POST['content_add']) == 'content_add'){
 
@@ -206,8 +205,6 @@ require_once (ROOT_PATH.'/Admin_config.php');
         echo "<script>window.location.href='$App_URL_Include./Content_add.php'</script>";
         exit;
     };
-
-
 
     //更新缓存
     if(isset($_GET['dele']) == 'del_cache'){

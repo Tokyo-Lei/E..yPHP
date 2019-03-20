@@ -1,6 +1,4 @@
 
-
-
         <div class="content-inner">
           <!-- Page Header-->
           <header class="page-header">

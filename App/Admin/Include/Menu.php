@@ -12,7 +12,6 @@ $user_db = $_DB->select("user", [
 
 ?>
 
-
 <body>
 <div class="page">
     <!-- Main Navbar-->
@@ -141,8 +140,6 @@ $user_db = $_DB->select("user", [
                 ';
             }
             ?>
-
-
 
 
 

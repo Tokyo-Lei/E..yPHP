@@ -6,35 +6,16 @@ define('IS_MyPHP', TRUE);
 define('ROOT_PATH',dirname(__FILE__));
 //加载配置
 require_once (ROOT_PATH.'/Admin_config.php');
-
-
 //如果用户空提交，返回重登录
-
-
 if(!isset($_SESSION['username'])){
     echo "<script>window.location.href='$admin_url./Login.php';</script>";
-    exit();  
-
-} 
-
-
-// 加载页头
+    exit();
+}
 include 'Include/Admin_head.php';
 include 'Include/Menu.php';
 include 'Include/Home.php';
-
-
-
-
-
 ?>
-
-
-
-
-
-
-          <!-- Page Footer-->
+<!-- Page Footer-->
           <footer class="main-footer">
             <div class="container-fluid">
               <div class="row">

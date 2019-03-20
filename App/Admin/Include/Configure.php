@@ -18,28 +18,18 @@ if(!isset($_SESSION['username'])){
 
 }
 
-
 ?>
 <!-- 加载页头 -->
 <?php include 'Admin_head.php';
-
 
 //调出配置数据
 $web = $_DB->select("basic","*",[
 "id" => 1
 ]);
 
-
-
-
-
 include 'Menu.php';
 
-
-
 ?>
-
-
 
 <div class="content-inner">
     <!-- Page Header-->

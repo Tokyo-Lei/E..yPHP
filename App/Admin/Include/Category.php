@@ -14,10 +14,8 @@ if(!isset($_SESSION['username'])){
     exit();
 }
 
-
 //加载页头
 include 'Admin_head.php';
-
 //调出分类数据
 $cate_db = $_DB->select("category", [
     "id",
@@ -28,15 +26,11 @@ $cate_db = $_DB->select("category", [
 ],[
     "ORDER" => ["sort"=>"ASC"]
 ]);
-
 //对分类进行多维排序
 $c_result=ClassTree::hTree($cate_db);
-
 //加载导航 分类页列表
 include 'Menu.php';
-
 ?>
-
 
 
 <div class="content-inner">
@@ -126,38 +120,9 @@ include 'Menu.php';
                         </div>
                     </div>
                 </div>
-                <!--                <div class="col-lg-12">-->
-                <!---->
-                <!---->
-                <!--                    <nav>-->
-                <!--                        <ul class="pagination ">-->
-                <!--                            <li class="page-item disabled has-shadow">-->
-                <!--                                <a class="page-link" href="#" tabindex="-1">上一页</a>-->
-                <!--                            </li>-->
-                <!--                            <li class="page-item has-shadow"><a class="page-link" href="#">1</a></li>-->
-                <!--                            <li class="page-item active has-shadow">-->
-                <!--                                <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>-->
-                <!--                            </li>-->
-                <!--                            <li class="page-item has-shadow"><a class="page-link" href="#">3</a></li>-->
-                <!--                            <li class="page-item has-shadow">-->
-                <!--                                <a class="page-link" href="#">下一页</a>-->
-                <!--                            </li>-->
-                <!--                        </ul>-->
-                <!---->
-                <!--                    </nav>-->
-                <!---->
-                <!--                </div>-->
             </div>
         </div>
     </section>
-
-
-
-
-
-
-
-
 
 <!-- Page Footer-->
 <footer class="main-footer">
@@ -176,6 +141,5 @@ include 'Menu.php';
 </div>
 </div>
 </div>
-
 
 <?php include 'Admin_footer.php'; ?>

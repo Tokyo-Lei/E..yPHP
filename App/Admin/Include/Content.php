@@ -42,9 +42,7 @@ if(isset($_GET['page'])==""){
 $urlPattern = $App_URL_Include.'Content.php?page=(:num)';
 $paginator = new Paginator($totalItems, $itemsPerPage, $currentPage, $urlPattern);
 
-
 $new_currentPage = ($currentPage-1)*$web[0]['basic_num'];
-
 
 
 //获取内容数据
@@ -61,7 +59,6 @@ $content_db = $_DB->select("content", [
 );
 
 ?>
-
 
 <div class="content-inner">
     <!-- Page Header-->

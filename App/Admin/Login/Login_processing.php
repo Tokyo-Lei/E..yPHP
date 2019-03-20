@@ -8,8 +8,6 @@ define('ROOT_PATH',dirname(__FILE__));
 //加载配置
 require_once(ROOT_PATH . '/../Admin_config.php');
 
-
-
 if(!empty($_POST['login'])){
     exit('非法访问!');  
 }else{
@@ -18,8 +16,6 @@ if(!empty($_POST['login'])){
         
         echo "<script>window.location.href='$admin_url./../Login.php';</script>";
     }
-
-
 
     $admin_DB = $_DB->select("user", [
         "username",
@@ -60,4 +56,3 @@ if(!empty($_POST['login'])){
     }
 
 };
-

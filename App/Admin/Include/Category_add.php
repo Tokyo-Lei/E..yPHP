@@ -14,7 +14,6 @@ if(!isset($_SESSION['username'])){
     exit();
 }
 
-
 //加载页头
 include 'Admin_head.php';
 
@@ -33,10 +32,6 @@ $c_result=ClassTree::hTree($cate_db);
 include 'Menu.php';
 
 ?>
-
-
-
-
 
 
     <div class="content-inner">
@@ -178,31 +173,6 @@ include 'Menu.php';
                 </div>
             </div>
         </section>
-
-
-        <!--<!--    <script type="text/javascript">-->
-        <!--<!--        function cate_add() {-->
-        <!--<!--            $.ajax({-->
-        <!--<!--                type: "get",//方法类型-->
-        <!--<!--                dataType:"json",//预期服务器返回的数据类型-->
-        <!--<!--                url:"--><?php ////echo $admin_url ?><!--//Processing.php?ajax=cate_add" ,//url-->
-        <!--//                async:false,//同步-->
-        <!--//                cache:false,//不缓存-->
-        <!--//                data:$('#cate_add').serialize(),-->
-        <!--//                success:function (data) {-->
-        <!--//                    alert(data.msg)-->
-        <!--//                },-->
-        <!--//                error:function () {-->
-        <!--//                    alert("发生错误！");-->
-        <!--//                }-->
-        <!--//-->
-        <!--//            });-->
-        <!--//        }-->
-        <!--//    </script>-->
-
-
-
-
 
     <!-- Page Footer-->
     <footer class="main-footer">

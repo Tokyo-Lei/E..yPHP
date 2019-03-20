@@ -15,11 +15,8 @@ if(!isset($_SESSION['username'])){
     exit();
 }
 
-
 //加载页头
 include 'Admin_head.php';
-
-
 
 //调出
 $user_edit = $_DB->select("user", [
@@ -175,10 +172,8 @@ include 'Menu.php';
                 </div>
 
 
-
             </div>
         </div>
     </section>
-
 
 <?php include 'Admin_footer.php'; ?>

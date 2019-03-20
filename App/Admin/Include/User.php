@@ -15,10 +15,8 @@ if(!isset($_SESSION['username'])){
     exit();
 }
 
-
 $_count_content = $_DB->count("user");
 $web = $_DB->select("basic",["basic_num"],["id" => 1]);
-
 
 //文章总数
 $totalItems = $_count_content;
@@ -35,8 +33,6 @@ $paginator = new Paginator($totalItems, $itemsPerPage, $currentPage, $urlPattern
 
 
 $new_currentPage = ($currentPage-1)*$web[0]['basic_num'];
-
-
 
 
 //加载页头
@@ -123,17 +119,6 @@ include 'Menu.php';
 
 
 
-
-
-
-
-
-
-
-
-
-
-
             <div class="col-lg-12">
 
                 <nav>
@@ -173,12 +158,6 @@ include 'Menu.php';
 
 
 
-
-
-
-
-
-
 <!-- Page Footer-->
 <footer class="main-footer">
     <div class="container-fluid">
@@ -196,6 +175,5 @@ include 'Menu.php';
 </div>
 </div>
 </div>
-
 
 <?php include 'Admin_footer.php'; ?>

@@ -7,10 +7,7 @@ define('ROOT_PATH',dirname(__FILE__));
 //加载配置
 require_once(ROOT_PATH . '/../Admin_config.php');
 
-
 //如果用户空提交，返回重登录
-
-
 
 if(!isset($_SESSION['username'])){
     echo "<script>window.location.href='$admin_url./login.php';</script>";
@@ -18,10 +15,7 @@ if(!isset($_SESSION['username'])){
 
 }
 
-
-?>
-<!-- 加载页头 -->
-<?php include 'Admin_head.php';
+include 'Admin_head.php';
 
 //调出分类数据
 $cate_db = $_DB->select("category", [
@@ -37,21 +31,9 @@ $cate_db = $_DB->select("category", [
 //对分类进行多维排序
 $c_result=ClassTree::hTree($cate_db);
 
-?>
-
-
-
-
-
-
-
-<?php
 include 'Menu.php';
 
-
 ?>
-
-
 
 
 <div class="content-inner">
@@ -170,7 +152,6 @@ include 'Menu.php';
                         </div>
                     </div>
                 </div>
-
 
 
             </div>
