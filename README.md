@@ -51,6 +51,7 @@ App		前后台PHP文件目录
 Public		放置CSS、JS、IMG等目录
    |-	Home	前台静态资源目录
    |-	Admin	后台静态资源目录
+          |- Admin_config.php 后台数据库配置
 Library		函数目录 （不定期新增）
    |-	Medoo.php	数据库类            
    |-	Php_error.php	错误提示类
@@ -58,12 +59,15 @@ Library		函数目录 （不定期新增）
    |-	ClassTree.class.php	分类归梯类
    |-	Post_Get.php	POST GET过滤类
    |-   Session.php  Session类
+   |-   Editormd.uploader.class.php 编辑器上传类
+   |-   File.class.php  文件操作类
+   |-   Page.php 分页类
 Templates		前台模板目录
 Cache		模板缓存目录
 404.html		404错误页面
 .htaccess		伪静态、去掉index.php配置文件
-Config.php		框架配置文件
-index.php		框架入口文件
+Config.php		前台框架配置文件
+index.php		前台框架入口文件
 ```
 
 ## 模板引擎
@@ -102,3 +106,55 @@ new.html为例,模板循环：
   <li><a href="#"> {{ v.id }} - {{ v.username }} </a>
   {% endfor %}            
 ```
+
+## Aaache伪静态规则
+```php
+<IfModule mod_rewrite.c>
+  Options +FollowSymlinks -Multiviews
+  RewriteEngine On
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{QUERY_STRING} ^(.*)$
+  RewriteRule ^index.html$ index.php
+  RewriteRule ^admin$ /App/Admin/Index.php
+  ReWriteRule ^new.html$ /App/Home/new.php
+  ReWriteRule ^content_([0-9]+).html$ /App/Home/content.php?id=$1
+  ErrorDocument 404 /Public/404.html
+</IfModule>          
+```
+
+## nginx规则
+```php
+<IfModule mod_rewrite.c>
+if (!-d $request_filename){
+	set $rule_0 1$rule_0;
+}
+if (!-f $request_filename){
+	set $rule_0 2$rule_0;
+}
+if ($args ~ "^(.*)$"){
+	set $rule_0 3$rule_0;
+}
+if ($rule_0 = "321"){
+	rewrite ^/index.html$ /index.php;
+}
+	rewrite ^/admin$ /App/Admin/Index.php;
+</IfModule>          
+```
+
+## 应用第三方开源
+
+编辑器 [Editor.md Examples][1]   
+数据库处理 [Medoo][2] 
+错误提示 [PHP ERROR][3]
+模板引擎 [TWIG][4]
+## 感谢
+
+汶（广州）   解决了技术方案
+老钱（上海） 提出了思路方案
+
+
+  [1]: http://pandao.github.io/editor.md/examples/
+  [2]: https://medoo.lvtao.net/
+  [3]: https://github.com/JosephLenton/PHP-Error
+  [4]: https://twig.symfony.com/
