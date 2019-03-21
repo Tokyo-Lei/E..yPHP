@@ -35,7 +35,7 @@ Un...反正很奇怪的思维，不好好写MVC思想和依赖Composer关系。
 - 本代码开源遵循Apache Licence 2.0协议。
 - 支持PHP7.X以上版本，建议Win平台Apache+php+mysql组合环境使用。
 - Liunx平台晚些更新。
-- 如果不使用数据库，请在Config.php注释数据库配置即可。
+- 如果不使用数据库，请在App/Data.php注释数据库配置即可。
 ```php
 //配置数据库
 $_DB['mysql']['pconnect'] = true;//设置是否长连接
