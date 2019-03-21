@@ -107,6 +107,19 @@ require_once (ROOT_PATH.'/Admin_config.php');
     };
 
 
+    //删除内容
+    if(isset($_GET['dele_content'])){
+
+        $_DB->delete("content",[
+            "id" => intval($_GET['dele_content']),
+        ]);
+        echo "<script>window.location.href='$App_URL_Include./Content.php'</script>";
+        exit;
+    };
+
+
+
+
 
     //编辑用户
     if(isset($_GET['user_update']) == 'user_update'){
