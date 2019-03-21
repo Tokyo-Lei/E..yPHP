@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 //定义根目录
 define('ADMIN_PATH',dirname(__FILE__));
 //定义session
@@ -50,7 +50,7 @@ require_once (LIB_PATH.'/Page.php');
 require_once(LIB_PATH.'/Editormd.uploader.class.php');
 
 //加载phpError类
-require_once $_SERVER['DOCUMENT_ROOT'].'./Library/Php_error.php' ;
+require_once $_SERVER['DOCUMENT_ROOT'].'/Library/Php_error.php' ;
 \php_error\reportErrors();
 
 //加载备份类
@@ -64,10 +64,10 @@ $_URL_INCLUDE = pathinfo($_URL_['dirname']);
 //配置数据库
 $_DB['mysql']['pconnect'] = true;//设置是否长连接
 $_DB['mysql']['charset'] = 'utf8';//设置连接编码
-$_DB['mysql']['server'] = '127.0.0.1';
-$_DB['mysql']['username'] = 'root';
-$_DB['mysql']['password'] = 'root';
-$_DB['mysql']['database_name'] = 'myphp';
+$_DB['mysql']['server'] = 'localhost';
+$_DB['mysql']['username'] = '您的数据库账号';
+$_DB['mysql']['password'] = '您的数据库密码';
+$_DB['mysql']['database_name'] = '您的数据库名称';
 $_DB['mysql']['database_type'] = 'mysql';
 $_DB['mysql']['prefix'] = 'easy_';
 $_DB['mysql']['port'] = 3306;

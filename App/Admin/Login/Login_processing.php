@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 // PHP处理中心
 session_start();
 define('IS_MyPHP', TRUE);
@@ -47,7 +47,7 @@ if(!empty($_POST['login'])){
         }
         session::set('username', $_session_data);
         session::set('id', $_userid);
-        echo "<script>window.location.href='$admin_url./../';</script>";
+        echo "<script>window.location.href='/admin';</script>";
 
     }else{
         session::destroy();
