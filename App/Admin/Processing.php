@@ -177,6 +177,49 @@ require_once (ROOT_PATH.'/Admin_config.php');
     };
 
 
+
+// 新增碎片
+
+
+
+if(isset($_POST['fragment_add']) == 'fragment_add'){
+
+    $_DB->insert("fragment", [
+        "title" => Getpost::filterWords($_POST['f_title']),
+        "tag" => Getpost::filterWords($_POST['f_tag']),
+        "text" => htmlentities($_POST['f_text']),
+    ]);
+    echo "<script>window.location.href='$App_URL_Include./Fragment.php'</script>";
+    exit;
+};
+
+
+// 新增碎片 编辑
+if(isset($_POST['fragment_edit']) == 'fragment_edit'){
+
+    $_DB->update("fragment", [
+        "title" => Getpost::filterWords($_POST['f_title']),
+        "tag" => Getpost::filterWords($_POST['f_tag']),
+        "text" => htmlentities($_POST['f_text']),
+    ],[
+        "id" => intval($_POST['f_id'])
+    ]);
+    echo "<script>window.location.href='$App_URL_Include./Fragment.php'</script>";
+    exit;
+};
+
+// 新增碎片 删除
+if(isset($_GET['dele_fragment'])){
+
+    $_DB->delete("fragment",[
+        "id" => intval($_GET['dele_fragment']),
+    ]);
+
+    echo "<script>window.location.href='$App_URL_Include./Fragment.php'</script>";
+    exit;
+};
+
+
     //撰写内容-发布
     if(isset($_POST['content_add']) == 'content_add'){
 
@@ -218,6 +261,30 @@ require_once (ROOT_PATH.'/Admin_config.php');
         echo "<script>window.location.href='$App_URL_Include./Content_add.php'</script>";
         exit;
     };
+
+
+    //撰写内容-编辑
+    if(isset($_GET['content_update']) == 'content_update'){
+        $_DB->update("content", [
+            "content_pid" => intval($_POST['content_pid']),
+            "content_title" =>Getpost::filterWords($_POST['content_title']),
+            "content_keyword" => Getpost::filterWords($_POST['content_keyword']),
+            "content_description" => Getpost::filterWords($_POST['content_description']),
+            "content_thumbnail" => Getpost::filterWords($_POST['content_thumbnail']),
+            "content_time" => intval($_POST['content_time']),
+            "content_text" => htmlentities($_POST['content_text']),
+            "content_draft" => intval($_POST['content_draft'])
+        ],[
+            "id" => intval($_GET['id']),
+        ]);
+        echo '<script> setTimeout("history.back()", 1000); </script>';
+        exit;
+    };
+
+
+
+
+
 
     //更新缓存
     if(isset($_GET['dele']) == 'del_cache'){
