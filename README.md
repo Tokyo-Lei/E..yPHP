@@ -7,7 +7,7 @@
 
 
 
-[![](https://img.shields.io/badge/version-0.01-green.svg)](https://img.shields.io/badge/version-0.01-green.svg)
+[![](https://img.shields.io/badge/version-0.02-green.svg)](https://img.shields.io/badge/version-0.02-green.svg)
 [![](https://img.shields.io/badge/php-7+-brightgreen.svg)](https://img.shields.io/badge/php-7+-brightgreen.svg)
 [![](https://img.shields.io/badge/mysql-5+-orange.svg)](https://img.shields.io/badge/mysql-5+-orange.svg)
 [![](https://img.shields.io/badge/license-Apache%202-blue.svg)](https://img.shields.io/badge/license-Apache%202-blue.svg)
