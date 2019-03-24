@@ -71,7 +71,7 @@ require_once DATA_PATH.'/Data.php';
 //执行数据库
 $_DB= new medoo($_DB['mysql']);
 
-$_VERSION = 0.01;
+$_VERSION = 0.02;
 $_MEDOO = 1.6;
 $_userid = 1;
 ?>
