@@ -23,7 +23,7 @@ class Easycore {
         //将键名换成tag 二维数组用某个字段的值当做键名
         $db_array = array_column($db_array, NULL, $tag);
         //删除二维数组的键名
-        array_walk($db, function(&$t) {
+        array_walk($db_array, function(&$t) {
             unset($t['tag']);
         });
         //创建新数组，重排
