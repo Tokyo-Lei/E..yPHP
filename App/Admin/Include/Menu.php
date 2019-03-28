@@ -172,6 +172,16 @@ $user_db = $_DB->select("user", [
 
 
 
+            <?php if($_URL_['filename'] == 'Message'){
+                echo '<li class="active"><a href="'. $App_URL_Include .'Message.php"> <i class="icon-rss-feed"></i>留言管理 </a></li>';
+            }else{
+                echo '<li><a href="'. $App_URL_Include .'Message.php"> <i class="icon-rss-feed"></i>留言管理 </a></li>';
+            }
+            ?>
+
+
+
+
 
 
             <?php if($_URL_['filename'] == 'Configure'){
