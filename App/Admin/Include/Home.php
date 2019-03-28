@@ -163,7 +163,7 @@
                                 </div>
                                 <ul class="card-body  no-padding">
                                     <li class="list-group-item ">
-                                        <button type="button" class="btn btn-sm btn-primary mr-2">回复</button>
+                                        <a href="#" class="btn btn-sm btn-info mr-2">回复</a>
                                         <label for="input-1"><i class="fa fa-clock-o"></i> 2019-10-1 21:22 - 真的很不错</label>
                                     </li>
                                     <li class="list-group-item">
@@ -171,19 +171,19 @@
                                         <label for="input-1"><i class="fa fa-clock-o"></i> 2019-10-1 21:22 -  真的很不错 / 回复：<i class="fa fa-clock-o"></i> 2019-10-1 21:22 不是吧？你真的喜欢？</label>
                                     </li>
                                     <li class="list-group-item">
-                                        <button type="button" class="btn btn-sm btn-primary mr-2">回复</button>
+                                        <button type="button" class="btn btn-sm btn-info mr-2">回复</button>
                                         <label for="input-1"><i class="fa fa-clock-o"></i> 2019-10-1 21:22 -  真的很不错</label>
                                     </li>
                                     <li class="list-group-item">
-                                        <button type="button" class="btn btn-sm btn-primary mr-2">回复</button>
+                                        <button type="button" class="btn btn-sm btn-info mr-2">回复</button>
                                         <label for="input-1"><i class="fa fa-clock-o"></i>  2019-10-1 21:22 - 真的很不错</label>
                                     </li>
                                     <li class="list-group-item">
-                                        <button type="button" class="btn btn-sm btn-success mr-2">回复</button>
+                                        <button type="button" class="btn btn-sm btn-success mr-2">已回</button>
                                         <label for="input-1"><i class="fa fa-clock-o"></i> 2019-10-1 21:22 -  真的很不错 / 回复：<i class="fa fa-clock-o"></i> 2019-10-1 21:22 不是吧？你真的喜欢？</label>
                                     </li>
                                     <li class="list-group-item">
-                                        <button type="button" class="btn btn-sm btn-primary mr-2">回复</button>
+                                        <button type="button" class="btn btn-sm btn-info mr-2">回复</button>
                                         <label for="input-1"><i class="fa fa-clock-o"></i>  2019-10-1 21:22 - 真的很不错</label>
                                     </li>
 
