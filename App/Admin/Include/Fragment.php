@@ -12,7 +12,7 @@ require_once(ROOT_PATH . '/../Admin_config.php');
 
 
 if(!isset($_SESSION['username'])){
-    echo "<script>window.location.href='$admin_url./login.php';</script>";
+    echo "<script>window.location.href='../login.php';</script>";
 
     exit();
 
@@ -111,39 +111,6 @@ $fragment_db = $_DB->select("fragment",[
                             </div>
                         </div>
                     </div>
-
-<!--                    <div class="col-lg-12">-->
-<!---->
-<!--                        <nav>-->
-<!--                            --><?php //if ($paginator->getNumPages() > 1): ?>
-<!---->
-<!--                                <ul class="pagination">-->
-<!--                                    --><?php //if ($paginator->getPrevUrl()): ?>
-<!--                                        <li class="page-item disabled has-shadow"><a class="page-link" ref="--><?php //echo $paginator->getPrevUrl(); ?><!--">上一页</a></li>-->
-<!--                                    --><?php //endif; ?>
-<!---->
-<!--                                    --><?php //foreach ($paginator->getPages() as $page): ?>
-<!--                                        --><?php //if ($page['url']): ?>
-<!--                                            <li  --><?php //echo $page['isCurrent'] ? 'class="page-item active has-shadow"' : 'class="page-item  has-shadow"'; ?><!-->-->
-<!--                                                <a class="page-link" href="--><?php //echo $page['url']; ?><!--">--><?php //echo $page['num']; ?><!--</a>-->
-<!--                                            </li>-->
-<!--                                        --><?php //else: ?>
-<!--                                            <li class="disabled" 'class="page-item  has-shadow"'><span class="sr-only" >--><?php //echo $page['num']; ?><!--</span></li>-->
-<!--                                        --><?php //endif; ?>
-<!--                                    --><?php //endforeach; ?>
-<!---->
-<!--                                    --><?php //if ($paginator->getNextUrl()): ?>
-<!--                                        <li class="page-item has-shadow"><a class="page-link" href="--><?php //echo $paginator->getNextUrl(); ?><!--">下一页</a></li>-->
-<!--                                    --><?php //endif; ?>
-<!--                                </ul>-->
-<!---->
-<!--                            --><?php //endif; ?>
-<!---->
-<!---->
-<!--                        </nav>-->
-<!---->
-<!--                    </div>-->
-
 
 
                 </div>

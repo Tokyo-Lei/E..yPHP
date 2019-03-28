@@ -116,6 +116,35 @@ $user_db = $_DB->select("user", [
             ?>
 
 
+            <?php if($_URL_['filename'] == 'Fragment_add' or $_URL_['filename'] == 'Fragment'){
+                echo '
+
+                <li class="active"><a href="#tagDropdown" aria-expanded="true" data-toggle="collapse"> <i class="icon-list"></i>碎片管理 </a>
+                    <ul id="tagDropdown" class="collapse list-unstyled ">
+                        <li><a href="'. $App_URL_Include .'Fragment_add.php">增加碎片</a></li>
+                        <li><a href="'. $App_URL_Include .'Fragment.php" target="_parent">管理碎片</a></li>
+                    </ul>
+                </li>
+
+';
+            }else{
+                echo '
+                
+                 <li><a href="#tagDropdown" aria-expanded="false" data-toggle="collapse"> <i class="icon-list"></i>碎片管理 </a>
+                    <ul id="tagDropdown" class="collapse list-unstyled ">
+                        <li><a href="'. $App_URL_Include .'Fragment_add.php">增加碎片</a></li>
+                        <li><a href="'. $App_URL_Include .'Fragment.php" target="_parent">管理碎片</a></li>
+                    </ul>
+                </li>
+                
+                ';
+            }
+            ?>
+
+
+
+
+
 
             <!--用户管理-->
             <?php if($_URL_['filename'] == 'User' or $_URL_['filename'] == 'User_edit' ){
