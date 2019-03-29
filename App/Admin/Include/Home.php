@@ -202,7 +202,7 @@
                                 if($v['reply'] == null){
                                 echo date("Y-m-d H:i:s", $v['u_time']) . "-" . $v['u_content'];
                                 }else{
-                                    echo date("Y-m-d H:i:s", $v['u_time']) . "-" . $v['u_content'] . "/ 回复:<i
+                                    echo date("Y-m-d H:i:s", $v['u_time']) . "-" . $v['u_content'] . "/ 回复 <i
                                         class=\"fa fa-clock-o\"></i> " . date("Y-m-d H:i:s", $v['reply_time']) . "-" . $v['reply'];
                                 }
                                 ?>
