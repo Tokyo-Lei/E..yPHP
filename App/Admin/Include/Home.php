@@ -162,30 +162,59 @@
                                     <h2 class="h3">最新回馈 </h2>
                                 </div>
                                 <ul class="card-body  no-padding">
-                                    <li class="list-group-item ">
-                                        <a href="#" class="btn btn-sm btn-info mr-2">回复</a>
-                                        <label for="input-1"><i class="fa fa-clock-o"></i> 2019-10-1 21:22 - 真的很不错</label>
+
+
+                                    <?php
+
+
+                                    $message_db = $_DB->select("message",  [
+                                        "id",
+                                        "u_name",
+                                        "u_email",
+                                        "u_time",
+                                        "u_audit",
+                                        "u_content",
+                                        "reply",
+                                        "reply_time"
+                                    ],
+                                        [
+                                            "ORDER" => ["id"=>"DESC"],
+                                            "LIMIT" => 6
+                                        ]
+                                    );
+
+
+                                foreach ($message_db as $v){
+
+                                echo '  <li class="list-group-item ">';
+
+                                if ($v['reply'] == null) {
+                                    echo '<a href="' . "Message_edit.php?id=" . $v['id'] . '" class="btn btn-sm btn-info mr-2">回复</a>';
+                                } else {
+                                    echo '<a href="#" class="btn btn-sm btn-success mr-2">已回</a>';
+                                }
+                                ?>
+
+                                        <label for="input-1"><i class="fa fa-clock-o"></i>
+
+
+                                <?php
+                                if($v['reply'] == null){
+                                echo date("Y-m-d H:i:s", $v['u_time']) . "-" . $v['u_content'];
+                                }else{
+                                    echo date("Y-m-d H:i:s", $v['u_time']) . "-" . $v['u_content'] . "/ 回复:<i
+                                        class=\"fa fa-clock-o\"></i> " . date("Y-m-d H:i:s", $v['reply_time']) . "-" . $v['reply'];
+                                }
+                                ?>
+
+
+                                        </label>
                                     </li>
-                                    <li class="list-group-item">
-                                        <button type="button" class="btn btn-sm btn-success mr-2">已回</button>
-                                        <label for="input-1"><i class="fa fa-clock-o"></i> 2019-10-1 21:22 -  真的很不错 / 回复：<i class="fa fa-clock-o"></i> 2019-10-1 21:22 不是吧？你真的喜欢？</label>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <button type="button" class="btn btn-sm btn-info mr-2">回复</button>
-                                        <label for="input-1"><i class="fa fa-clock-o"></i> 2019-10-1 21:22 -  真的很不错</label>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <button type="button" class="btn btn-sm btn-info mr-2">回复</button>
-                                        <label for="input-1"><i class="fa fa-clock-o"></i>  2019-10-1 21:22 - 真的很不错</label>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <button type="button" class="btn btn-sm btn-success mr-2">已回</button>
-                                        <label for="input-1"><i class="fa fa-clock-o"></i> 2019-10-1 21:22 -  真的很不错 / 回复：<i class="fa fa-clock-o"></i> 2019-10-1 21:22 不是吧？你真的喜欢？</label>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <button type="button" class="btn btn-sm btn-info mr-2">回复</button>
-                                        <label for="input-1"><i class="fa fa-clock-o"></i>  2019-10-1 21:22 - 真的很不错</label>
-                                    </li>
+
+
+                                <?php
+                                 }
+                                 ?>
 
                                 </ul>
                             </div>
