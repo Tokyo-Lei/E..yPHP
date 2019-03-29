@@ -117,6 +117,30 @@ require_once (ROOT_PATH.'/Admin_config.php');
         exit;
     };
 
+    //删除留言
+    if(isset($_GET['dele_message'])){
+
+        $_DB->delete("message",[
+            "id" => intval($_GET['dele_message']),
+        ]);
+        echo "<script>window.location.href='$App_URL_Include./Message.php'</script>";
+        exit;
+    };
+
+    //通过审核
+    if(isset($_GET['audit_message'])){
+
+        $_DB->update("message",[
+            "u_audit" =>1
+        ],[
+            "id" => intval($_GET['audit_message']),
+        ]);
+        echo "<script>window.location.href='$App_URL_Include./Message.php'</script>";
+        exit;
+    };
+
+
+
 
 
 
@@ -136,6 +160,29 @@ require_once (ROOT_PATH.'/Admin_config.php');
         echo "<script>window.location.href='$App_URL_Include./User.php'</script>";
         exit;
     };
+
+
+
+
+
+    //回复留言
+    if(isset($_GET['Message_edit']) == 'Message_edit'){
+
+        $_DB->update("message", [
+            "reply" =>Getpost::filterWords($_GET['reply']),
+            "reply_time" => intval($_GET['reply_time']),
+
+        ],[
+            "id" => intval($_GET['Message_id']),
+        ]);
+        echo "<script>window.location.href='$App_URL_Include./Message.php'</script>";
+        exit;
+    };
+
+
+
+
+
 
 
     //更新基本设置
