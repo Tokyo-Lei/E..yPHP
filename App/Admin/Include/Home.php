@@ -169,10 +169,7 @@
 
                                     $message_db = $_DB->select("message",  [
                                         "id",
-                                        "u_name",
-                                        "u_email",
                                         "u_time",
-                                        "u_audit",
                                         "u_content",
                                         "reply",
                                         "reply_time"
