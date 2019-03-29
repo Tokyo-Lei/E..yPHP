@@ -113,10 +113,20 @@ $message_db = $_DB->select("message",  [
                                         echo "<td>".$v['u_email']."</td>";
                                         echo "<td>";?><?php if($v['reply'] == null){echo "没回复";}else{echo"已回复";}?><?php echo "  </td>";
                                         echo "<td>";?><?php if($v['u_audit'] == 0){echo "审核中";}else{echo"已审";}?><?php echo " </td>";
-                                        echo "<td>
-                                                <a href='".$admin_url."Message_edit.php?id=".$v['id']."' class='btn btn-primary btn-sm' target='_top'>通过</a>
-                                                <a href='".$admin_url."Message_edit.php?id=".$v['id']."' class='btn btn-info btn-sm' target='_top'>回复</a>
-                                                <a href='".$App_URL."Processing.php?dele_message=".$v['id']."' class='btn btn-danger btn-sm'>删除</a></td>";
+                                        echo "<td>";
+
+                                         if($v['u_audit'] != 1){
+                                            echo "<a href='".$App_URL."Processing.php?audit_message=".$v['id']."' class='btn btn-primary btn-sm' target='_top'>通过</a>";
+                                         }
+
+                                        if($v['reply'] == null){
+                                            echo " <a href='".$admin_url."Message_edit.php?id=".$v['id']."' class='btn btn-info btn-sm' target='_top'>回复</a>";
+                                        }else{
+                                            echo " <a href='".$admin_url."Message_edit.php?id=".$v['id']."' class='btn btn-warning btn-sm' target='_top'>查看回复</a>";
+                                        }
+
+
+                                        echo " <a href='".$App_URL."Processing.php?dele_message=".$v['id']."' class='btn btn-danger btn-sm'>删除</a></td>";
                                         echo "</tr>";
 
 
