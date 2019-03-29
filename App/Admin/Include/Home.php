@@ -60,11 +60,14 @@
                   <div class="item d-flex align-items-center">
                     <div class="icon bg-orange"><i class="icon-check"></i></div>
                     <div class="title"><span>留言<br>回馈统计</span>
+                        <?php
+                        $_count_message = $_DB->count("message");
+                        ?>
                       <div class="progress">
-                        <div role="progressbar" style="width: 50%; height: 4px;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" class="progress-bar bg-orange"></div>
+                        <div role="progressbar" style="width: <?php echo $_count_message ?>%; height: 4px;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" class="progress-bar bg-orange"></div>
                       </div>
                     </div>
-                    <div class="number"><strong>50</strong></div>
+                    <div class="number"><strong><?php echo $_count_message ?></strong></div>
                   </div>
                 </div>
               </div>
@@ -186,7 +189,7 @@
                                 echo '  <li class="list-group-item ">';
 
                                 if ($v['reply'] == null) {
-                                    echo '<a href="' . "Message_edit.php?id=" . $v['id'] . '" class="btn btn-sm btn-info mr-2">回复</a>';
+                                    echo '<a href="' . "/App/Admin/Include/Message_edit.php?id=" . $v['id'] . '" class="btn btn-sm btn-info mr-2">回复</a>';
                                 } else {
                                     echo '<a href="#" class="btn btn-sm btn-success mr-2">已回</a>';
                                 }
