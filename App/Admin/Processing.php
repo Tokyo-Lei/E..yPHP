@@ -317,15 +317,15 @@ if(isset($_GET['dele_fragment'])){
     //撰写内容-编辑
     if(isset($_GET['content_update']) == 'content_update'){
         $_DB->update("content", [
-            "content_pid" => intval($_POST['content_pid']),
-            "content_title" =>Getpost::filterWords($_POST['content_title']),
-            "content_keyword" => Getpost::filterWords($_POST['content_keyword']),
-            "content_description" => Getpost::filterWords($_POST['content_description']),
-            "content_thumbnail" => Getpost::filterWords($_POST['content_thumbnail']),
-            "content_time" => intval($_POST['content_time']),
-            "content_text" => htmlentities($_POST['content_text']),
-            "content_url" => Getpost::filterWords($_POST['content_url']),
-            "content_draft" => intval($_POST['content_draft'])
+            "content_pid" => intval($_GET['content_pid']),
+            "content_title" =>Getpost::filterWords($_GET['content_title']),
+            "content_keyword" => Getpost::filterWords($_GET['content_keyword']),
+            "content_description" => Getpost::filterWords($_GET['content_description']),
+            "content_thumbnail" => Getpost::filterWords($_GET['content_thumbnail']),
+            "content_time" => intval($_GET['content_time']),
+            "content_text" => htmlentities($_GET['content_text']),
+            "content_url" => Getpost::filterWords($_GET['content_url']),
+            "content_draft" => intval($_GET['content_draft'])
         ],[
             "id" => intval($_GET['id']),
         ]);
