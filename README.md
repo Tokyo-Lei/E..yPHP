@@ -7,7 +7,7 @@
 
 
 
-[![](https://img.shields.io/badge/version-0.02-green.svg)](https://img.shields.io/badge/version-0.02-green.svg)
+[![](https://img.shields.io/badge/version-0.03-green.svg)](https://img.shields.io/badge/version-0.03-green.svg)
 [![](https://img.shields.io/badge/php-7+-brightgreen.svg)](https://img.shields.io/badge/php-7+-brightgreen.svg)
 [![](https://img.shields.io/badge/mysql-5+-orange.svg)](https://img.shields.io/badge/mysql-5+-orange.svg)
 [![](https://img.shields.io/badge/license-Apache%202-blue.svg)](https://img.shields.io/badge/license-Apache%202-blue.svg)
@@ -22,6 +22,7 @@ Un...反正很奇怪的思维，不好好写MVC思想和依赖Composer关系。
 
 ## 更新日志
 
+- 2019年3月31日 新增分类显示隐藏
 - 2019年3月29日 新增留言本管理页面，更新数据库表
 - 2019年3月28日 新增核心类 增加前台使用碎片类、优化静态资源，换成CDN
 - 2019年3月24日 版本0.02 新增碎片管理

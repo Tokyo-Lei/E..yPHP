@@ -21,6 +21,7 @@ $cate_db = $_DB->select("category", [
     "id",
     "pid",
     "cate_name",
+    "cate_hide",
     "sort"
 
 ],[
@@ -59,6 +60,7 @@ include 'Menu.php';
                                         <th>ID</th>
                                         <th>分类名称</th>
                                         <th>排序</th>
+                                        <th>状态</th>
                                         <th>管理</th>
                                     </tr>
                                     </thead>
@@ -73,6 +75,9 @@ include 'Menu.php';
                                         echo "<th scope='row'>".$v['id']."</th>";
                                         echo "<td>".$v['cate_name']."</td>";
                                         echo "<td>".$v['sort']."</td>";
+                                        echo "<td>";
+                                        if($v['cate_hide']==0){echo "显示";}else{echo "隐藏";}
+                                        echo "</td>";
                                         echo "<td><a href='".$admin_url."Category_edit.php?id=".$v['id']."' class='btn btn-info btn-sm' target='_top'>编辑</a> <a href='".$App_URL."Processing.php?dele_cate=".$v['id']."' class='btn btn-danger btn-sm'>删除</a></td>";
                                         echo "</tr>";
 

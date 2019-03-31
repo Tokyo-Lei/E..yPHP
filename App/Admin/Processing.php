@@ -53,6 +53,7 @@ require_once (ROOT_PATH.'/Admin_config.php');
              "cate_name" =>Getpost::filterWords($_POST['cate_name']),
              "cate_keyword" => Getpost::filterWords($_POST['cate_keyword']),
              "cate_description" => Getpost::filterWords($_POST['cate_description']),
+             "cate_hide" => intval($_GET['cate_hide']),
              "cate_url" => $_POST['cate_url'],
              "sort" => intval($_POST['sort'])
          ]);
@@ -68,6 +69,7 @@ require_once (ROOT_PATH.'/Admin_config.php');
             "cate_keyword" => Getpost::filterWords($_GET['cate_keyword']),
             "cate_description" => Getpost::filterWords($_GET['cate_description']),
             "cate_url" => $_GET['cate_url'],
+            "cate_hide" => intval($_GET['cate_hide']),
             "sort" => intval($_GET['sort'])
         ],[
             "id" => intval($_GET['id']),

@@ -23,6 +23,7 @@ $cate_db = $_DB->select("category", [
     "id",
     "pid",
     "cate_name",
+    "cate_hide",
     "sort"
 ]);
 
@@ -155,6 +156,19 @@ include 'Menu.php';
                                             <input type="test" name="cate_url" class="form-control">
                                         </div>
                                     </div>
+
+
+                                    <div class="form-group row">
+                                        <label class="col-sm-3 form-control-label">显示/隐藏</label>
+                                        <div class="col-sm-3">
+                                            <select name="cate_hide" class="form-control mb-3">
+                                                <option value='0'>显示菜单</option>
+                                                <option value='1'>隐藏菜单</option>
+
+                                            </select>
+                                        </div>
+                                    </div>
+
 
 
                                     <div class="line"></div>

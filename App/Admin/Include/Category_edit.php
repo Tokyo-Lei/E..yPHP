@@ -24,6 +24,7 @@ $cate_db = $_DB->select("category", [
     "cate_keyword",
     "cate_description",
     "cate_url",
+    "cate_hide",
     "sort"
 ],[
     "ORDER" => ["sort"=>"ASC"]
@@ -40,7 +41,8 @@ $cate_db2 = $_DB->select("category", [
     "cate_keyword",
     "cate_description",
     "cate_url",
-    "sort"
+    "sort",
+    "cate_hide"
 
 ],[
     "id" => intval($_GET['id'])
@@ -178,6 +180,40 @@ include 'Menu.php';
 
 
                                 <div class="line"></div>
+
+
+
+
+                                <div class="form-group row">
+                                    <label class="col-sm-3 form-control-label">显示/隐藏</label>
+                                    <div class="col-sm-3">
+                                        <select name="cate_hide" class="form-control mb-3">
+
+
+
+                                            <option value='<?php echo $cate_db2[0]['cate_hide']?> '><?php if($cate_db2[0]['cate_hide']==0){echo "显示菜单";}else{echo "隐藏菜单";} ?></option>
+                                            <?php
+
+                                                if($cate_db2[0]['cate_hide']==0){
+
+                                                    echo "<option value='1'>隐藏菜单</option>";
+                                                }else{
+                                                    echo "<option value='0'>显示菜单</option>";
+                                                }
+
+                                            ?>
+                                        </select>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="line"></div>
+
+
+
+
+
 
                                 <div class="form-group row">
                                     <div class="col-sm-4 offset-sm-3">
