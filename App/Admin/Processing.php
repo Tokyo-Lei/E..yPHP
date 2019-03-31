@@ -279,6 +279,7 @@ if(isset($_GET['dele_fragment'])){
             "content_description" => Getpost::filterWords($_POST['content_description']),
             "content_thumbnail" => Getpost::filterWords($_POST['content_thumbnail']),
             "content_time" => intval($_POST['content_time']),
+            "content_url" => Getpost::filterWords($_POST['content_url']),
             "content_text" => htmlentities($_POST['content_text']),
             "content_draft" => 0
         ]);
@@ -304,6 +305,7 @@ if(isset($_GET['dele_fragment'])){
             "content_description" => Getpost::filterWords($_POST['content_description']),
             "content_thumbnail" => Getpost::filterWords($_POST['content_thumbnail']),
             "content_time" => intval($_POST['content_time']),
+            "content_url" => Getpost::filterWords($_POST['content_url']),
             "content_text" => htmlentities($_POST['content_text']),
             "content_draft" => 1
         ]);
@@ -322,6 +324,7 @@ if(isset($_GET['dele_fragment'])){
             "content_thumbnail" => Getpost::filterWords($_POST['content_thumbnail']),
             "content_time" => intval($_POST['content_time']),
             "content_text" => htmlentities($_POST['content_text']),
+            "content_url" => Getpost::filterWords($_POST['content_url']),
             "content_draft" => intval($_POST['content_draft'])
         ],[
             "id" => intval($_GET['id']),

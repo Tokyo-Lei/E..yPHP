@@ -10,12 +10,32 @@ require_once(ROOT_PATH . '/../Admin_config.php');
 //如果用户空提交，返回重登录
 
 if (!isset($_SESSION['username'])) {
-    echo "<script>window.location.href='../login.php';</script>";
+    echo "<script>window.location.href='$admin_url./login.php';</script>";
     exit();
 
 }
 
 include 'Admin_head.php';
+
+//获取内容数据
+$content_db = $_DB->select("content", [
+    "[>]category" => ["content.content_pid" => "id"],
+], [
+    "category.cate_name",
+    "content.id",
+    "content.content_pid",
+    "content.content_title",
+    "content.content_keyword",
+    "content.content_description",
+    "content.content_thumbnail",
+    "content.content_text",
+    "content.content_url",
+    "content.content_time",
+    "content.content_draft"
+],
+    ["content.id" => intval($_GET['id'])]
+);
+
 
 //调出分类数据
 $cate_db = $_DB->select("category", [
@@ -30,6 +50,7 @@ $cate_db = $_DB->select("category", [
 
 //对分类进行多维排序
 $c_result = ClassTree::hTree($cate_db);
+
 
 include 'Menu.php';
 
@@ -61,7 +82,8 @@ include 'Menu.php';
                                 <div class="form-group row">
                                     <label class="col-sm-1 form-control-label">撰写标题</label>
                                     <div class="col-sm-5">
-                                        <input type="text" class="form-control" name="content_title">
+                                        <input type="text" class="form-control" name="content_title"
+                                               value="<?php echo $content_db[0]['content_title'] ?>">
                                     </div>
                                 </div>
                                 <div class="line"></div>
@@ -71,7 +93,9 @@ include 'Menu.php';
                                     <label class="col-sm-1 form-control-label">所属分类</label>
                                     <div class="col-sm-5">
                                         <select name="content_pid" class="form-control mb-3">
-                                            <option value='0'>- 顶级分类 -</option>
+
+                                            <option value='<?php echo $content_db[0]['content_pid'] ?>'>
+                                                当前分类: <?php echo $content_db[0]['cate_name'] ?></option>
 
                                             <?php
 
@@ -106,7 +130,8 @@ include 'Menu.php';
                                 <div class="form-group row">
                                     <label class="col-sm-1 form-control-label">关键词</label>
                                     <div class="col-sm-5">
-                                        <input type="text" class="form-control" name="content_keyword">
+                                        <input type="text" class="form-control" name="content_keyword"
+                                               value="<?php echo $content_db[0]['content_keyword'] ?>">
                                     </div>
                                 </div>
                                 <div class="line"></div>
@@ -114,7 +139,8 @@ include 'Menu.php';
                                 <div class="form-group row">
                                     <label class="col-sm-1 form-control-label">描述/摘要</label>
                                     <div class="col-sm-5">
-                                        <input type="text" class="form-control" name="content_description">
+                                        <input type="text" class="form-control" name="content_description"
+                                               value="<?php echo $content_db[0]['content_description'] ?>">
                                     </div>
                                 </div>
                                 <div class="line"></div>
@@ -122,7 +148,8 @@ include 'Menu.php';
                                 <div class="form-group row">
                                     <label class="col-sm-1 form-control-label">缩略图</label>
                                     <div class="col-sm-5">
-                                        <input type="text" class="form-control" name="content_thumbnail">
+                                        <input type="text" class="form-control" name="content_thumbnail"
+                                               value="<?php echo $content_db[0]['content_thumbnail'] ?>">
                                     </div>
                                 </div>
                                 <div class="line"></div>
@@ -130,9 +157,37 @@ include 'Menu.php';
                                 <div class="form-group row">
                                     <label class="col-sm-1 form-control-label">跳转外链</label>
                                     <div class="col-sm-5">
-                                        <input type="text" class="form-control" name="content_url" value="http://">
+                                        <input type="text" class="form-control" name="content_url"
+                                               value="<?php echo $content_db[0]['content_url'] ?>">
                                     </div>
                                 </div>
+                                <div class="line"></div>
+
+
+
+
+                                <div class="form-group row">
+                                    <label class="col-sm-1 form-control-label">是否存草稿？</label>
+                                    <div class="col-sm-5">
+                                        <select name="content_pid" class="form-control mb-3">
+                                            <option value='<?php echo $content_db[0]['content_draft'] ?>'>当前状态:
+
+                                                <?php
+
+                                                if ($content_db[0]['content_draft'] == 0) {
+                                                    echo "已发布";
+                                                } else {
+                                                    echo "草稿";
+                                                }
+                                                ?>
+
+                                            </option>
+                                            <option value="0">保存草稿</option>
+                                            <option value="1">设置发布</option>
+                                        </select>
+                                    </div>
+                                </div>
+
                                 <div class="line"></div>
 
 
@@ -140,21 +195,19 @@ include 'Menu.php';
                                     <label class="col-sm-3 form-control-label">内容编辑器</label>
                                     <div class="col-sm-12" id="editormd">
                                         <textarea id="editor" class="form-control" autofocus style="display:none;"
-                                                  name="content_text"></textarea>
+                                                  name="content_text"><?php echo $content_db[0]['content_text'] ?></textarea>
                                     </div>
                                 </div>
 
+
                                 <div class="line"></div>
-
-
-
 
                                 <div class="form-group row">
                                     <div class="col-sm-4 form-control-label">
+                                        <input type="hidden" name="content_update" value="content_update">
+                                        <input type="hidden" name="id" value="<?php echo $content_db[0]['id'] ?>">
                                         <input type="hidden" name="content_time" value="<?php echo time(); ?>">
-                                        <button type="submit" name="content_draft" class="btn btn-info" value="1">保存
-                                        </button>
-                                        <button type="submit" name="content_add" class="btn btn-success">发布</button>
+                                        <button type="submit" name="content_add" class="btn btn-success">更新</button>
                                     </div>
                                 </div>
                             </form>
