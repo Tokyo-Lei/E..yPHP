@@ -116,6 +116,34 @@ $user_db = $_DB->select("user", [
             ?>
 
 
+            <?php if($_URL_['filename'] == 'Pic_add' or $_URL_['filename'] == 'Pic'){
+                echo '
+
+                <li class="active"><a href="#picDropdown" aria-expanded="true" data-toggle="collapse"> <i class="icon-bill"></i>图片管理 </a>
+                    <ul id="picDropdown" class="collapse list-unstyled ">
+                        <li><a href="'. $App_URL_Include .'Pic_add.php">新增图片</a></li>
+                        <li><a href="'. $App_URL_Include .'Pic.php" target="_parent">管理图片</a></li>
+                    </ul>
+                </li>
+
+';
+            }else{
+                echo '
+                
+                 <li><a href="#picDropdown" aria-expanded="false" data-toggle="collapse"> <i class="icon-bill"></i>图片管理 </a>
+                    <ul id="picDropdown" class="collapse list-unstyled ">
+                        <li><a href="'. $App_URL_Include .'Pic_add.php">新增图片</a></li>
+                        <li><a href="'. $App_URL_Include .'Pic.php" target="_parent">管理图片</a></li>
+                    </ul>
+                </li>
+                
+                ';
+            }
+            ?>
+
+
+
+
             <?php if($_URL_['filename'] == 'Fragment_add' or $_URL_['filename'] == 'Fragment'){
                 echo '
 
