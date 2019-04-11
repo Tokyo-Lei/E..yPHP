@@ -185,7 +185,7 @@ if ($rule_0 = "321"){
 
 - 汶（广州）   解决了技术方案
 - 老钱（上海） 提出了思路方案
-
+- 罗火（深圳） 解决前端技术
 
   [1]: http://pandao.github.io/editor.md/examples/
   [2]: https://medoo.lvtao.net/
